@@ -11,8 +11,8 @@
 ---
 <p align="center">
   <img src="https://www.sc-best-practices.org/_images/mechanisms_overview.png" width="600">
+    <i>Fig.1 Overview of mechanisms influencing chromatin accessibility. Created with BioRender.com.</i>
 </p> 
-
 
 ## Overview
 
