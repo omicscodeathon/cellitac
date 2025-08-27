@@ -66,11 +66,12 @@ Cell Type Markers – From PanglaoDB
 Link: https://panglaodb.se/markers.html
 Format: CSV file with marker genes per cell type
 
-**Human Reference Genome** 
+Human Reference Genome** 
 File: hg38.fa.gz (~3 GB)
 
 Link: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
 File: hg38.fa.gz (~3 GB)
+
 ---
 Input Features [n_cells × n_features]:
 ├── TF motif enrichment scores (746 TFs from JASPAR)
