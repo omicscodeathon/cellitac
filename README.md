@@ -9,6 +9,10 @@
 <h4 align="center"><i>A novel TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
 
 ---
+<p align="center">
+  <img src="https://www.sc-best-practices.org/_images/mechanisms_overview.png" width="600">
+</p> 
+
 
 ## Overview
 
