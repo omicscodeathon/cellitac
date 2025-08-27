@@ -1,7 +1,7 @@
 <p align="center">
   <b>Omics Codeathon General Application - October 2025</b><br>
   Organized by the African Society for Bioinformatics and Computational Biology (ASBCB) with support from the NIH Office of Data Science Strategy.<br>
-  Virtual event: October 7–18, 2025 CAT | Application deadline: July 23, 2025
+  Virtual event: October 7–18, 2025 
 </p>
 
 <h1 align="center">scatactf</h1>
