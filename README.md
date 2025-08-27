@@ -1,6 +1,6 @@
-# Reverse TF Classification for scATAC-seq Analysis  
-
-
+<p align="center">
+  <b>Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</b>
+</p>
 
 
 **A novel TF-centric framework for analyzing single-cell chromatin accessibility**  
@@ -36,20 +36,55 @@ Known TFs → Predict Regulatory Regions → Classify Cell-Specific TF Networks 
 ---
 
 ## Data Sources  
+Data Sources & Access
+Primary Dataset (Free & Open Access)
 
-**Primary Dataset**  
-- *10X Genomics Human PBMC Multiome* (scATAC-seq + scRNA-seq)  
-  - 10,847 high-quality immune cells  
-  - 156,543 accessible chromatin peaks  
-  - 4 cell types: T-cells, B-cells, Monocytes, NK cells  
+10X Genomics Human PBMC Multiome (scATAC-seq + scRNA-seq)
 
-**Reference Resources**  
-- JASPAR 2022 – TF motif database  
-- ENCODE – Chromatin accessibility & histone modification  
-- GTEx Atlas – Gene expression profiles  
-- ChIP-Atlas – TF binding validation  
+Download link: https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_granulocyte_sorted_10k/
+Size: ~2-3 GB
+Content: 10,847 high-quality immune cells, 156,543 accessible chromatin peaks
+Cell types: T-cells, B-cells, Monocytes, NK cells
 
+**Alternative Small Dataset (For Testing)**
+
+3k PBMCs scATAC-seq
+
+Link: https://cf.10xgenomics.com/samples/cell-atac/1.2.0/atac_v1_pbmc_10k/
+Size: ~1 GB
+Content: Smaller dataset for initial development
+
+**Reference Resources (Open Source)**
+
+JASPAR 2022 – TF motif database
+
+Link: https://jaspar.elixir.no/download/data/2022/CORE/
+File: JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt (~50 MB)
+Content: 746 TF motifs for vertebrates
+
+
+Cell Type Markers – From PanglaoDB
+
+Link: https://panglaodb.se/markers.html
+Format: CSV file with marker genes per cell type
+
+**Human Reference Genome** 
+File: hg38.fa.gz (~3 GB)
+
+Link: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
+File: hg38.fa.gz (~3 GB)
 ---
+Input Features [n_cells × n_features]:
+├── TF motif enrichment scores (746 TFs from JASPAR)
+├── Chromatin accessibility profiles per cell
+├── Gene expression data (from paired scRNA-seq)
+├── Cell metadata (cell type, batch, quality metrics)
+└── Genomic context features (sequence composition, TSS distance)
+
+Expected Labels:
+├── Cell type annotations: ['T_cells', 'B_cells', 'Monocytes', 'NK_cells']
+└── TF activity ground truth (from ChIP-seq when available)
+
 
 # Workflow  
 
@@ -119,23 +154,22 @@ Known TFs → Predict Regulatory Regions → Classify Cell-Specific TF Networks 
 
 ---
 
-## Technical Stack  
+## Computational Framework
 
-- **Languages**: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac)  
-- **Single-cell**: Scanpy, AnnData, episcanpy  
+- **Programming Languages**: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac)  
+- **Single-cell**: Scanpy, AnnData, episcanpy  $$$$$$$$
 - **Genomics**: pybedtools, pyranges, pyfaidx  
 - **Visualization**: matplotlib, seaborn, plotly  
-- **Infrastructure**: Docker, Snakemake, Jupyter  
+- **Infrastructure**: Jupyter Notebook
 
 ---
 
-## Expected Outputs  
+  ## Expected Outputs**
 
-- ✅ TF-Region Binding Probability Matrix  
-- ✅ Cell-type-specific TF activity scores  
-- ✅ TF regulatory network topology  
-- ✅ Novel TF-target associations  
-- ✅ Master regulator rankings  
+Cell type classification accuracy (>85%)
+TF importance rankings per cell type
+Basic heatmap visualizations
+Model performance metrics
 
 ---
 
@@ -163,6 +197,6 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 - GitHub Issues: For bug reports & feature requests  
 - Discussions: Join our GitHub discussions tab  
 
-⭐ If you find this project useful, please give it a **star** on GitHub! ⭐
+If you find this project useful, please give it a **star** on GitHub! ⭐
 
 
