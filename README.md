@@ -28,16 +28,6 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
 
 ---
 
-## Research Innovation  
-
-**Traditional Workflow:**  
-Open Regions → Active TFs → Cell Type Annotation
-**Our Reverse Approach:**  
-Known TFs → Predict Regulatory Regions → Classify Cell-Specific TF Networks → Discover Novel Mechanisms
-
-
----
-
 ## Project Scope & Objectives  
 
 - **Primary Goal**: Build machine learning models to classify TFs to their regulatory regions in a cell-type-specific context  
