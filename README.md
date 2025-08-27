@@ -1,6 +1,11 @@
+<p align="center">
+  <b>Omics Codeathon General Application - October 2025</b><br>
+  Organized by the African Society for Bioinformatics and Computational Biology (ASBCB) with support from the NIH Office of Data Science Strategy.<br>
+  Virtual event: October 7–18, 2025 CAT | Application deadline: July 23, 2025
+</p>
+
 <h1 align="center">scatactf</h1>
 <h3 align="center">Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</h3>
-
 <h4 align="center"><i>A novel TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
 
 ---
@@ -111,7 +116,7 @@ Expected Labels:
 ### **Block 4: Model Development**  
 10. Split dataset into train/validation/test  
 11. Train baseline ML models (RF, XGBoost, Logistic Regression)  
-12. Develop deep learning models (Transformers, GNNs, attention-based)  
+12. Develop deep learning models (Transformers, GNNs, attention-based)  $$$$$$ mat not used....
 
 ---
 
@@ -150,9 +155,6 @@ Expected Labels:
 
 ---
 
-
----
-
 ## Computational Framework
 
 - **Programming Languages**: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac)  
@@ -165,7 +167,7 @@ Expected Labels:
 
   ## Expected Outputs**
 
-Cell type classification accuracy (>85%)
+Cell type classification accuracy 
 TF importance rankings per cell type
 Basic heatmap visualizations
 Model performance metrics
@@ -174,7 +176,7 @@ Model performance metrics
 
 ## Contributors  
 
-- **[Your Name]** – Principal Investigator | Conceptualization & methodology  
+- **[Team_Leader_1]** – Principal Investigator | Conceptualization & methodology  
 - **[Contributor 2]** – Data Scientist | Model development & validation  
 - **[Contributor 3]** – Bioinformatician | Data processing & analysis  
 - **[Contributor 4]** – Computational Biologist | Biological interpretation  
@@ -184,17 +186,11 @@ Advisors:
 
 ---
 
-## License  
-
-This project is licensed under the MIT License – see the LICENSE file for details.  
-
----
 
 ## Contact  
 
-- Email: [your-email@institution.edu]  
+- Email: [your-email@institution.edu] , [your-email@institution.edu],[your-email@institution.edu],[your-email@institution.edu]
 - GitHub Issues: For bug reports & feature requests  
-- Discussions: Join our GitHub discussions tab  
 
 If you find this project useful, please give it a **star** on GitHub! ⭐
 
