@@ -1,5 +1,8 @@
 # Reverse TF Classification for scATAC-seq Analysis  
 
+
+
+
 **A novel TF-centric framework for analyzing single-cell chromatin accessibility**  
 
 ---
@@ -21,8 +24,6 @@ Open Regions → Active TFs → Cell Type Annotation
 **Our Reverse Approach:**  
 Known TFs → Predict Regulatory Regions → Classify Cell-Specific TF Networks → Discover Novel Mechanisms
 
-
----
 
 ---
 
@@ -50,7 +51,7 @@ Known TFs → Predict Regulatory Regions → Classify Cell-Specific TF Networks 
 
 ---
 
-## Workflow  
+# Workflow  
 
 ### **Block 1: Dataset Collection & Setup**  
 1. Download 10X PBMC Multiome dataset (scATAC + scRNA)  
