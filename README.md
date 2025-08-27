@@ -1,6 +1,5 @@
-<p align="center">
-  <b>Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</b>
-</p>
+<h1 align="center">scatactf</h1>
+<h3 align="center">Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</h3>
 
 
 **A novel TF-centric framework for analyzing single-cell chromatin accessibility**  
