@@ -10,13 +10,16 @@
 
 ---
 
-## Overview  
+## Overview
 
 Traditional scATAC-seq analysis follows a forward approach:  
-➡️ Open chromatin regions → Identify active TFs → Annotate cell types  
 
-Our **reverse paradigm** starts with known transcription factors (TFs) and predicts their regulatory activity across cell types.  
-This enables systematic discovery of TF-driven programs, insights into cellular identity, and mechanisms of disease dysregulation.  
+<p align="center">
+  <b>➡️ Open chromatin regions → Identify active TFs → Annotate cell types</b>
+</p>
+
+Our reverse paradigm starts with known transcription factors (TFs) and predicts their regulatory activity across cell types.  
+This enables systematic discovery of TF-driven programs, insights into cellular identity, and mechanisms of disease dysregulation.
 
 ---
 
