@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">scatactf</h1>
-<h3 align="center">Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</h3>
+<h2 align="center">Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</h2>
 <h4 align="center"><i>A novel TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
 
 ---
