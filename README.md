@@ -14,6 +14,17 @@
   <i>Fig.1: Overview of mechanisms influencing chromatin accessibility. Source: <a href="https://www.sc-best-practices.org/chromatin_accessibility/introduction.html">sc-best-practices.org</a>. Created with BioRender.com.</i>
 </p>
 
+---
+## Contributors  
+
+- **Rana H. Abu-Zeid** – Team Lead | Computational Biology & Project Management  
+- **Syrus Semawule** – Bioinformatician | Data processing & analysis
+- **Emmanuel aroma** – Bioinformaticain | ML Modeling & pipline control
+
+Advisors:  
+- **[Advisor Name]** – Senior Researcher | Domain expertise  
+
+---
 
 ## Overview
 
@@ -177,16 +188,7 @@ Model performance metrics
 
 ---
 
-## Contributors  
 
-- **Rana H. Abu-Zeid** – Team Lead | Computational Biology & Project Management  
-- **Syrus Semawule** – Bioinformatician | Data processing & analysis
-- **Emmanuel aroma** – Bioinformaticain | ML Modeling & pipline control
-
-Advisors:  
-- **[Advisor Name]** – Senior Researcher | Domain expertise  
-
----
 
 ## Contact  
 
