@@ -4,7 +4,7 @@
   Virtual event: October 7–18, 2025 
 </p>
 
-<h1 align="center">Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</h1>
+<h1 align="center">Reverse TF-Machine Learning Modeling of Gene Regulation from scATAC-seq Data</h1>
 <h2 align="center">scATAC-tf</h2>
 <h4 align="center"><i>A novel TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
 
@@ -179,22 +179,21 @@ Model performance metrics
 
 ## Contributors  
 
-- **[Team_Leader_1]** – Principal Investigator | Conceptualization & methodology  
-- **[Contributor 2]** – Data Scientist | Model development & validation  
-- **[Contributor 3]** – Bioinformatician | Data processing & analysis  
-- **[Contributor 4]** – Computational Biologist | Biological interpretation  
+- **Rana H. Abu-Zeid** – Team Lead | Computational Biology & Project Management  
+- **Syrus Semawule** – Bioinformatician | Data processing & analysis
+- **Emmanuel aroma** – Bioinformaticain | ML Modeling & pipline control
 
 Advisors:  
 - **[Advisor Name]** – Senior Researcher | Domain expertise  
 
 ---
 
-
 ## Contact  
 
-- Email: [your-email@institution.edu] , [your-email@institution.edu],[your-email@institution.edu],[your-email@institution.edu]
+- Email: rana.abuzeid@badyau.edu.eg  ,---------,-------------,----------
 - GitHub Issues: For bug reports & feature requests  
 
-If you find this project useful, please give it a **star** on GitHub! ⭐
+If you find this project useful, please give it a **STAR** on GitHub! ⭐
+
 
 
