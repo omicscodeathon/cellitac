@@ -17,9 +17,9 @@
 ---
 ## Contributors  
 
-- **Rana H. Abu-Zeid** – Team Lead | Computational Biology & Project Management  
-- **Syrus Semawule** – Bioinformatician | Data processing & analysis
-- **Emmanuel aroma** – Bioinformaticain | ML Modeling & pipline control
+- **Rana H. Abu-Zei** – Team Lead | Computational Biology & Project Management  
+- **Syrus Semawule** – Bioinformatician | Data processing & Biological Annotation 
+- **Emmanuel Aroma** – Bioinformaticain | ML Modeling & Pipline Control
 
 Advisors:  
 - **[Advisor Name]** – Senior Researcher | Domain expertise  
