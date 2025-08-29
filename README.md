@@ -92,16 +92,23 @@ Link: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
 File: hg38.fa.gz (~3 GB)
 
 ---
-Input Features [n_cells × n_features]:
-├── TF motif enrichment scores (746 TFs from JASPAR)
-├── Chromatin accessibility profiles per cell
-├── Gene expression data (from paired scRNA-seq)
-├── Cell metadata (cell type, batch, quality metrics)
-└── Genomic context features (sequence composition, TSS distance)
+### **Input Features** *(shape: n_cells × n_features)*
 
-Expected Labels:
-├── Cell type annotations: ['T_cells', 'B_cells', 'Monocytes', 'NK_cells']
-└── TF activity ground truth (from ChIP-seq when available)
+- **TF Motif Enrichment Scores:** 746 TFs from JASPAR  
+- **Chromatin Accessibility Profiles:** Per-cell accessibility data  
+- **Gene Expression Data:** Derived from paired scRNA-seq  
+- **Cell Metadata:** Includes cell type, batch information, and quality metrics  
+- **Genomic Context Features:** Sequence composition, TSS distance  
+
+---
+
+### **Expected Labels** $$$$$$$
+
+- **Cell Type Annotations:**  
+  `['T_cells', 'B_cells', 'Monocytes', 'NK_cells']`  
+
+- **TF Activity Ground Truth:**  
+  Based on ChIP-seq data when available  
 
 
 # Workflow  
