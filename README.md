@@ -4,16 +4,27 @@
   Virtual event: October 7–18, 2025 
 </p>
 
-<h1 align="center">scatactf</h1>
-<h3 align="center">Reverse TF-Centric Modeling of Gene Regulation from scATAC-seq Data</h3>
+<h1 align="center">Reverse TF-Machine Learning Modeling of Gene Regulation from scATAC-seq Data</h1>
+<h2 align="center">scATAC-tf</h2>
 <h4 align="center"><i>A novel TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
 
 ---
 <p align="center">
   <img src="https://www.sc-best-practices.org/_images/mechanisms_overview.png" width="600"><br>
-  <i>Fig.1: Overview of mechanisms influencing chromatin accessibility. Source: <a href="https://www.sc-best-practices.org/chromatin_accessibility/introduction.html">sc-best-practices.org</a>. Created with BioRender.com.</i>
+  <i>Fig.1: Overview of mechanisms influencing chromatin accessibility. Source: <a href="https://www.sc-best-practices.org/chromatin_accessibility/introduction.html">sc-best-practices.org</a> </i>
 </p>
 
+---
+## Contributors  
+
+- **Rana H. Abu-Zei** – Team Lead | Computational Biology & Project Management  
+- **Syrus Semawule** – Bioinformatician | Data processing & Biological Annotation 
+- **Emmanuel Aroma** – Bioinformaticain | ML Modeling & Pipline Control
+
+Advisors:  
+- **[Advisor Name]** – Senior Researcher | Domain expertise  
+
+---
 
 ## Overview
 
@@ -81,16 +92,23 @@ Link: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
 File: hg38.fa.gz (~3 GB)
 
 ---
-Input Features [n_cells × n_features]:
-├── TF motif enrichment scores (746 TFs from JASPAR)
-├── Chromatin accessibility profiles per cell
-├── Gene expression data (from paired scRNA-seq)
-├── Cell metadata (cell type, batch, quality metrics)
-└── Genomic context features (sequence composition, TSS distance)
+### **Input Features** *(shape: n_cells × n_features)*
 
-Expected Labels:
-├── Cell type annotations: ['T_cells', 'B_cells', 'Monocytes', 'NK_cells']
-└── TF activity ground truth (from ChIP-seq when available)
+- **TF Motif Enrichment Scores:** 746 TFs from JASPAR  
+- **Chromatin Accessibility Profiles:** Per-cell accessibility data  
+- **Gene Expression Data:** Derived from paired scRNA-seq  
+- **Cell Metadata:** Includes cell type, batch information, and quality metrics  
+- **Genomic Context Features:** Sequence composition, TSS distance  
+
+---
+
+### **Expected Labels** $$$$$$$
+
+- **Cell Type Annotations:**  
+  `['T_cells', 'B_cells', 'Monocytes', 'NK_cells']`  
+
+- **TF Activity Ground Truth:**  
+  Based on ChIP-seq data when available  
 
 
 # Workflow  
@@ -177,24 +195,14 @@ Model performance metrics
 
 ---
 
-## Contributors  
-
-- **[Team_Leader_1]** – Principal Investigator | Conceptualization & methodology  
-- **[Contributor 2]** – Data Scientist | Model development & validation  
-- **[Contributor 3]** – Bioinformatician | Data processing & analysis  
-- **[Contributor 4]** – Computational Biologist | Biological interpretation  
-
-Advisors:  
-- **[Advisor Name]** – Senior Researcher | Domain expertise  
-
----
 
 
 ## Contact  
 
-- Email: [your-email@institution.edu] , [your-email@institution.edu],[your-email@institution.edu],[your-email@institution.edu]
+- Email: rana.abuzeid@badyau.edu.eg  ,---------,-------------,----------
 - GitHub Issues: For bug reports & feature requests  
 
-If you find this project useful, please give it a **star** on GitHub! ⭐
+If you find this project useful, please give it a **STAR** on GitHub! ⭐
+
 
 
