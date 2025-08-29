@@ -22,8 +22,7 @@
 - **Emmanuel Aroma** – Bioinformaticain | ML Modeling & Pipline Control
 
 Advisors:  
-- **[Advisor Name]** – Senior Researcher | Domain expertise  
-
+- **[Olaitan I. Awe]** – Training officer, ASBCB, Cape Town, South Africa. 
 ---
 
 ## Overview
@@ -55,6 +54,18 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
 ## Data Sources  
 Data Sources & Access
 Primary Dataset (Free & Open Access)
+### 📂 **Project Data Overview**
+
+| **Data Type**        | **Source**           | **File Format**                                   |
+|----------------------|----------------------|---------------------------------------------------|
+| **scATAC-seq**       | 10X Multiome        | `fragments.tsv.gz`, `peaks.bed`                  |
+| **scRNA-seq**        | 10X Multiome        | `filtered_feature_bc_matrix.h5`                  |
+| **Cell Metadata**    | 10X Multiome        | `singlecell.csv`                                 |
+| **TF Motifs**        | JASPAR 2022         | `JASPAR2022_CORE_vertebrates.meme`               |
+| **Reference Genome** | UCSC hg38           | `hg38.fa.gz`                                     |
+| **Marker Genes**     | PanglaoDB           | `PanglaoDB_markers.tsv`                          |
+
+
 
 10X Genomics Human PBMC Multiome (scATAC-seq + scRNA-seq)
 
