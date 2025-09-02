@@ -66,9 +66,13 @@ Primary Dataset (Free & Open Access)
 | **Marker Genes**     | PanglaoDB           | `PanglaoDB_markers.tsv`                          |
 
 **Data sets**
+
 10X Genomics Human PBMC Multiome (scATAC-seq + scRNA-seq)
+
 Description: Cryopreserved human peripheral blood mononuclear cells (PBMCs) of a healthy female donor aged 25 were obtained by 10x Genomics from AllCells. Paired ATAC and Gene Expression libraries were generated from the isolated nuclei as described in the Chromium Next GEM Single Cell Multiome ATAC + Gene Expression User Guide (CG000338 Rev A) and sequenced on Illumina Novaseq 6000 v1 Kit (Forward Strand Dual-Index Workflow).
+
 Link to quality checks: [Dataset](https://github.com/omicscodeathon/scatactf/blob/main/data/Study2/pbmc_unsorted_10k%20-%20PBMC%20from%20a%20healthy%20donor%20-%20no%20cell%20sorting%20(10k).html)
+
 Estimated number of cells: 12,016 
 ATACMean raw read pairs per cell: 38,089 
 ATAC Median high-quality fragments per cell: 9,254 
