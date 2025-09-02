@@ -83,23 +83,27 @@ Link to quality checks: [Dataset](https://github.com/omicscodeathon/scatactf/blo
 - Linked genes: 12,576 
 - Linked peaks: 46,399 
 - Size: ~144 GB
+
 This dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. 10x citation
 
 **Alternative Small Dataset (For Testing)**
 3k PBMCs scATAC-seq
 Description: Cryopreserved human peripheral blood mononuclear cells (PBMCs) from a healthy female donor aged 25 were obtained by 10x Genomics from AllCells.
+
 Link to quality check: [Alternative dataset](https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_3k/pbmc_unsorted_3k_web_summary.html)
-Estimated number of cells: 3,009
-ATAC Mean raw read pairs per cell: 27,511
-ATAC Median high-quality fragments per cell: 9,877
-ATAC Number of peaks: 81,156
-GEX Mean raw reads per cell: 56,597
-GEX Median genes per cell: 1,494
-GEX Median UMI counts per cell: 2,764
-Linked genes: 6,762
-Linked peaks: 32,613
-Size: ~24 GB
-Content: Smaller dataset for initial development
+
+- Estimated number of cells: 3,009
+- ATAC Mean raw read pairs per cell: 27,511
+- ATAC Median high-quality fragments per cell: 9,877
+- ATAC Number of peaks: 81,156
+- GEX Mean raw reads per cell: 56,597
+- GEX Median genes per cell: 1,494
+- GEX Median UMI counts per cell: 2,764
+- Linked genes: 6,762
+- Linked peaks: 32,613
+- Size: ~24 GB
+
+This dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. 10x citation
 
 **Reference Resources (Open Source)**
 JASPAR 2022 – TF motif database
