@@ -73,16 +73,16 @@ Description: Cryopreserved human peripheral blood mononuclear cells (PBMCs) of a
 
 Link to quality checks: [Dataset](https://github.com/omicscodeathon/scatactf/blob/main/data/Study2/pbmc_unsorted_10k%20-%20PBMC%20from%20a%20healthy%20donor%20-%20no%20cell%20sorting%20(10k).html)
 
-Estimated number of cells: 12,016 
-ATACMean raw read pairs per cell: 38,089 
-ATAC Median high-quality fragments per cell: 9,254 
-ATAC Number of peaks: 63,751 
-GEX Mean raw reads per cell: 69,105 
-GEX Median genes per cell: 1,720 
-GEX Median UMI counts per cell: 3,302 
-Linked genes: 12,576 
-Linked peaks: 46,399 
-Size: ~144 GB
+- Estimated number of cells: 12,016 
+- ATACMean raw read pairs per cell: 38,089 
+- ATAC Median high-quality fragments per cell: 9,254 
+- ATAC Number of peaks: 63,751 
+- GEX Mean raw reads per cell: 69,105 
+- GEX Median genes per cell: 1,720 
+- GEX Median UMI counts per cell: 3,302 
+- Linked genes: 12,576 
+- Linked peaks: 46,399 
+- Size: ~144 GB
 This dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. 10x citation
 
 **Alternative Small Dataset (For Testing)**
