@@ -65,6 +65,11 @@ Primary Dataset (Free & Open Access)
 | **Reference Genome** | UCSC hg38           | `hg38.fa.gz`                                     |
 | **Marker Genes**     | PanglaoDB           | `PanglaoDB_markers.tsv`                          |
 
+<p align="center">
+  <img src="C:\Users\Asus\OneDrive - Badya University\ASBCB\ASBCB_draw methodology.drawio.png" width="600"><br>
+  <i>Fig.2: Overview of project methodology </i>
+</p>
+
 **Data sets**
 
 10X Genomics Human PBMC Multiome (scATAC-seq + scRNA-seq)
