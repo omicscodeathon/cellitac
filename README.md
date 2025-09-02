@@ -22,7 +22,7 @@
 - **Emmanuel Aroma** – Bioinformaticain | ML Modeling & Pipline Control
 
 Advisors:  
-- **[Olaitan I. Awe]** – Training officer, ASBCB, Cape Town, South Africa. 
+- **Olaitan I. Awe** – Training officer, ASBCB, Cape Town, South Africa. 
 ---
 
 ## Overview
@@ -65,34 +65,45 @@ Primary Dataset (Free & Open Access)
 | **Reference Genome** | UCSC hg38           | `hg38.fa.gz`                                     |
 | **Marker Genes**     | PanglaoDB           | `PanglaoDB_markers.tsv`                          |
 
-
-
+**Data sets**
 10X Genomics Human PBMC Multiome (scATAC-seq + scRNA-seq)
-
-Download link: https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_granulocyte_sorted_10k/
-Size: ~2-3 GB
-Content: 10,847 high-quality immune cells, 156,543 accessible chromatin peaks
-Cell types: T-cells, B-cells, Monocytes, NK cells
+Description: Cryopreserved human peripheral blood mononuclear cells (PBMCs) of a healthy female donor aged 25 were obtained by 10x Genomics from AllCells. Paired ATAC and Gene Expression libraries were generated from the isolated nuclei as described in the Chromium Next GEM Single Cell Multiome ATAC + Gene Expression User Guide (CG000338 Rev A) and sequenced on Illumina Novaseq 6000 v1 Kit (Forward Strand Dual-Index Workflow).
+Link to quality checks: [Dataset](https://github.com/omicscodeathon/scatactf/blob/main/data/Study2/pbmc_unsorted_10k%20-%20PBMC%20from%20a%20healthy%20donor%20-%20no%20cell%20sorting%20(10k).html)
+Estimated number of cells: 12,016 
+ATACMean raw read pairs per cell: 38,089 
+ATAC Median high-quality fragments per cell: 9,254 
+ATAC Number of peaks: 63,751 
+GEX Mean raw reads per cell: 69,105 
+GEX Median genes per cell: 1,720 
+GEX Median UMI counts per cell: 3,302 
+Linked genes: 12,576 
+Linked peaks: 46,399 
+Size: ~144 GB
+This dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. 10x citation
 
 **Alternative Small Dataset (For Testing)**
-
 3k PBMCs scATAC-seq
-
-Link: https://cf.10xgenomics.com/samples/cell-atac/1.2.0/atac_v1_pbmc_10k/
-Size: ~1 GB
+Description: Cryopreserved human peripheral blood mononuclear cells (PBMCs) from a healthy female donor aged 25 were obtained by 10x Genomics from AllCells.
+Link to quality check: [Alternative dataset](https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_3k/pbmc_unsorted_3k_web_summary.html)
+Estimated number of cells: 3,009
+ATAC Mean raw read pairs per cell: 27,511
+ATAC Median high-quality fragments per cell: 9,877
+ATAC Number of peaks: 81,156
+GEX Mean raw reads per cell: 56,597
+GEX Median genes per cell: 1,494
+GEX Median UMI counts per cell: 2,764
+Linked genes: 6,762
+Linked peaks: 32,613
+Size: ~24 GB
 Content: Smaller dataset for initial development
 
 **Reference Resources (Open Source)**
-
 JASPAR 2022 – TF motif database
-
 Link: https://jaspar.elixir.no/download/data/2022/CORE/
 File: JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt (~50 MB)
 Content: 746 TF motifs for vertebrates
 
-
 Cell Type Markers – From PanglaoDB
-
 Link: https://panglaodb.se/markers.html
 Format: CSV file with marker genes per cell type
 
