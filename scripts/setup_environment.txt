@@ -1,0 +1,408 @@
+# ================================================================================
+# COMPLETE R PACKAGE INSTALLATION GUIDE
+# ================================================================================
+# This script installs ALL required packages and dependencies for the scATAC project
+# Run this ONCE before starting the analysis
+# ================================================================================
+
+
+
+#is the machine is running as Linux system .run these at bash first: 
+sudo apt-get update
+sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+sudo apt-get install -y libhdf5-dev libfontconfig1-dev libcairo2-dev
+sudo apt-get install -y libharfbuzz-dev libfribidi-dev libfreetype6-dev
+
+
+
+# ================================================================================
+# STEP 1: UPDATE R AND INSTALL BASIC DEPENDENCIES
+# ================================================================================
+
+cat("=== Starting Complete R Package Installation ===\n")
+cat("This will take 15-30 minutes depending on your internet connection\n")
+
+# Check R version
+cat("Current R version:", R.version.string, "\n")
+if (as.numeric(R.version$major) < 4 || (as.numeric(R.version$major) == 4 && as.numeric(strsplit(R.version$minor, "\\.")[[1]][1]) < 2)) {
+  warning("R version 4.2 or higher is recommended. Consider updating R.")
+}
+
+# ================================================================================
+# STEP 2: INSTALL SYSTEM DEPENDENCIES (if needed)
+# ================================================================================
+
+cat("=== Installing Basic R Infrastructure ===\n")
+
+# Install/update basic tools
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager", dependencies = TRUE)
+}
+
+# Set correct Bioconductor version for your R version
+if (as.numeric(R.version$major) == 4 && as.numeric(strsplit(R.version$minor, "\\.")[[1]][1]) >= 2) {
+  BiocManager::install(version = "3.16", ask = FALSE, update = FALSE)  # For R 4.2+
+} else {
+  BiocManager::install(version = "3.15", ask = FALSE, update = FALSE)  # For older R versions
+}
+
+# ================================================================================
+# STEP 3: INSTALL CRAN PACKAGES (Basic Data Manipulation)
+# ================================================================================
+
+cat("=== Installing CRAN packages ===\n")
+
+cran_packages <- c(
+  # Basic data manipulation
+  "dplyr",
+  "tidyr", 
+  "readr",
+  "tibble",
+  "purrr",
+  "stringr",
+  
+  # Data structures
+  "Matrix",
+  "data.table",
+  "magrittr",
+  
+  # Plotting
+  "ggplot2",
+  "cowplot",
+  "patchwork",
+  "RColorBrewer",
+  "viridis",
+  "gridExtra",
+  "ggrepel",
+  "ggridges",
+  
+  # File I/O
+  "hdf5r",
+  "rhdf5",
+  "R.utils",
+  
+  # Statistical analysis
+  "cluster",
+  "RANN",
+  "leiden",
+  "igraph",
+  "irlba",
+  "RSpectra",
+  
+  # Machine Learning (optional, mainly for validation)
+  "randomForest",
+  "e1071",
+  
+  # Utilities
+  "devtools",
+  "remotes",
+  "pkgconfig",
+  "rlang",
+  "lifecycle",
+  "cli",
+  "glue",
+  "vctrs",
+  "pillar",
+  "fansi",
+  "utf8",
+  "crayon"
+)
+
+cat("Installing", length(cran_packages), "CRAN packages...\n")
+
+for (pkg in cran_packages) {
+  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+    cat("Installing", pkg, "...\n")
+    tryCatch({
+      install.packages(pkg, dependencies = TRUE, repos = "https://cran.rstudio.com/")
+      cat("✓", pkg, "installed successfully\n")
+    }, error = function(e) {
+      cat("✗ Failed to install", pkg, ":", e$message, "\n")
+    })
+  } else {
+    cat("✓", pkg, "already installed\n")
+  }
+}
+
+# ================================================================================
+# STEP 4: INSTALL BIOCONDUCTOR PACKAGES
+# ================================================================================
+
+cat("=== Installing Bioconductor packages ===\n")
+
+bioc_packages <- c(
+  # Core Bioconductor
+  "BiocGenerics",
+  "S4Vectors", 
+  "IRanges",
+  "GenomeInfoDb",
+  "GenomicRanges",
+  "Biostrings",
+  "XVector",
+  "zlibbioc",
+  
+  # Genomic analysis
+  "GenomicFeatures",
+  "GenomicAlignments",
+  "Rsamtools",
+  "rtracklayer",
+  "BSgenome",
+  "BSgenome.Hsapiens.UCSC.hg38",
+  
+  # Single cell specific
+  "SingleCellExperiment",
+  "scater",
+  "scran",
+  "batchelor",
+  
+  # ATAC-seq specific
+  "chromVAR",
+  "motifmatchr",
+  "TFBSTools",
+  "JASPAR2020",
+  
+  # Additional utilities
+  "limma",
+  "edgeR",
+  "DESeq2"
+)
+
+cat("Installing", length(bioc_packages), "Bioconductor packages...\n")
+
+for (pkg in bioc_packages) {
+  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+    cat("Installing", pkg, "...\n")
+    tryCatch({
+      BiocManager::install(pkg, ask = FALSE, update = FALSE)
+      cat("✓", pkg, "installed successfully\n")
+    }, error = function(e) {
+      cat("✗ Failed to install", pkg, ":", e$message, "\n")
+    })
+  } else {
+    cat("✓", pkg, "already installed\n")
+  }
+}
+
+# ================================================================================
+# STEP 5: INSTALL SEURAT (Main Single Cell Package)
+# ================================================================================
+
+cat("=== Installing Seurat and dependencies ===\n")
+
+# Install Seurat dependencies first
+seurat_deps <- c(
+  "spatstat.explore",
+  "spatstat.geom", 
+  "deldir",
+  "fitdistrplus",
+  "parallelly",
+  "future",
+  "future.apply",
+  "progressr",
+  "matrixStats",
+  "Rcpp",
+  "RcppAnnoy",
+  "RcppHNSW",
+  "RcppProgress",
+  "uwot",
+  "reticulate",
+  "plotly",
+  "miniUI",
+  "shiny",
+  "htmlwidgets",
+  "htmltools",
+  "sctransform",
+  "lmtest",
+  "spatstat.data",
+  "spatstat.sparse"
+)
+
+for (pkg in seurat_deps) {
+  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+    cat("Installing Seurat dependency:", pkg, "...\n")
+    tryCatch({
+      install.packages(pkg, dependencies = TRUE)
+      cat("✓", pkg, "installed successfully\n")
+    }, error = function(e) {
+      cat("✗ Failed to install", pkg, ":", e$message, "\n")
+    })
+  }
+}
+
+# Install Seurat itself
+if (!require("Seurat", quietly = TRUE)) {
+  cat("Installing Seurat main package...\n")
+  tryCatch({
+    install.packages("Seurat", dependencies = TRUE)
+    cat("✓ Seurat installed successfully\n")
+  }, error = function(e) {
+    cat("✗ Failed to install Seurat:", e$message, "\n")
+    cat("Trying alternative installation method...\n")
+    
+    # Try installing from GitHub as fallback
+    if (require("remotes", quietly = TRUE)) {
+      remotes::install_github("satijalab/seurat", dependencies = TRUE)
+    }
+  })
+} else {
+  cat("✓ Seurat already installed\n")
+}
+
+# ================================================================================
+# STEP 6: INSTALL SIGNAC (ATAC-seq Package)
+# ================================================================================
+
+cat("=== Installing Signac for ATAC-seq analysis ===\n")
+
+# Install Signac dependencies
+signac_deps <- c(
+  "Rfast",
+  "fastmatch",
+  "nabor"
+)
+
+for (pkg in signac_deps) {
+  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+    cat("Installing Signac dependency:", pkg, "...\n")
+    install.packages(pkg, dependencies = TRUE)
+  }
+}
+
+# Install Signac
+if (!require("Signac", quietly = TRUE)) {
+  cat("Installing Signac...\n")
+  tryCatch({
+    install.packages("Signac", dependencies = TRUE)
+    cat("✓ Signac installed successfully\n")
+  }, error = function(e) {
+    cat("✗ Failed to install Signac:", e$message, "\n")
+    cat("Trying Bioconductor installation...\n")
+    BiocManager::install("Signac")
+  })
+} else {
+  cat("✓ Signac already installed\n")
+}
+
+# ================================================================================
+# STEP 7: INSTALL ADDITIONAL USEFUL PACKAGES
+# ================================================================================
+
+cat("=== Installing additional useful packages ===\n")
+
+additional_packages <- c(
+  "pheatmap",      # Heatmaps
+  "corrplot",      # Correlation plots
+  "VennDiagram",   # Venn diagrams
+  "UpSetR",        # Upset plots
+  "scales",        # Scale functions for ggplot
+  "reshape2",      # Data reshaping
+  "GGally",        # Extension to ggplot2
+  "ggsignif",      # Significance bars
+  "ggpubr",        # Publication ready plots
+  "rmarkdown",     # For reports
+  "knitr",         # For reports
+  "DT",            # Interactive tables
+  "plotly"         # Interactive plots
+)
+
+for (pkg in additional_packages) {
+  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+    cat("Installing additional package:", pkg, "...\n")
+    tryCatch({
+      install.packages(pkg, dependencies = TRUE)
+      cat("✓", pkg, "installed successfully\n")
+    }, error = function(e) {
+      cat("✗ Failed to install", pkg, ":", e$message, "\n")
+    })
+  }
+}
+
+# ================================================================================
+# STEP 8: VERIFICATION - TEST ALL CRITICAL PACKAGES
+# ================================================================================
+
+cat("=== Verifying installations ===\n")
+
+critical_packages <- c(
+  "Seurat",
+  "Signac", 
+  "dplyr",
+  "ggplot2",
+  "Matrix",
+  "hdf5r",
+  "GenomicRanges",
+  "S4Vectors",
+  "BiocManager"
+)
+
+all_installed <- TRUE
+for (pkg in critical_packages) {
+  if (require(pkg, character.only = TRUE, quietly = TRUE)) {
+    cat("✓", pkg, "working correctly\n")
+  } else {
+    cat("✗", pkg, "NOT working\n")
+    all_installed <- FALSE
+  }
+}
+
+if (all_installed) {
+  cat("\n🎉 ALL CRITICAL PACKAGES INSTALLED SUCCESSFULLY! 🎉\n")
+  cat("You can now run the scATAC analysis pipeline\n")
+} else {
+  cat("\n⚠️  Some packages failed to install. Check the errors above.\n")
+}
+
+# ================================================================================
+# STEP 9: SYSTEM INFORMATION AND TROUBLESHOOTING
+# ================================================================================
+
+cat("=== System Information ===\n")
+cat("R version:", R.version.string, "\n")
+cat("Platform:", R.version$platform, "\n")
+cat("BiocManager version:", as.character(BiocManager::version()), "\n")
+
+# Create a summary report
+installed_packages <- installed.packages()[, c("Package", "Version")]
+critical_installed <- installed_packages[installed_packages[,"Package"] %in% critical_packages, ]
+
+cat("\nCritical packages versions:\n")
+print(critical_installed)
+
+# Save installation log
+writeLines(capture.output(sessionInfo()), "r_installation_log.txt")
+cat("Installation log saved to: r_installation_log.txt\n")
+
+# ================================================================================
+# TROUBLESHOOTING FUNCTIONS
+# ================================================================================
+
+# Function to reinstall problematic packages
+reinstall_package <- function(pkg_name) {
+  cat("Reinstalling", pkg_name, "...\n")
+  remove.packages(pkg_name)
+  if (pkg_name %in% c("Seurat", "Signac")) {
+    install.packages(pkg_name, dependencies = TRUE)
+  } else if (pkg_name %in% bioc_packages) {
+    BiocManager::install(pkg_name, force = TRUE)
+  } else {
+    install.packages(pkg_name, dependencies = TRUE)
+  }
+}
+
+# Function to check if all required packages work
+check_packages <- function() {
+  cat("=== Package Check ===\n")
+  for (pkg in critical_packages) {
+    tryCatch({
+      library(pkg, character.only = TRUE)
+      cat("✓", pkg, "loads successfully\n")
+    }, error = function(e) {
+      cat("✗", pkg, "failed to load:", e$message, "\n")
+    })
+  }
+}
+
+cat("\n=== Installation Complete ===\n")
+cat("To verify everything works, run: check_packages()\n")
+cat("If any package fails, run: reinstall_package('package_name')\n")
+cat("To start analysis, run: run_team1() or run_team2()\n")
