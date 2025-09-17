@@ -1,7 +1,7 @@
 
 ## Project Overview
 
-**Core Objective**: Build machine learning models to predict transcription factor (TF) regulatory activity from single-cell chromatin accessibility data (scATAC-seq) in immune cells.
+**Core Objective**: Build machine learning models for cell-type classification  based on transcription factor (TF) motif activity from single-cell chromatin accessibility data (scATAC-seq) in multiome 10xvPBMC cells .
 
 **Innovation**: Reverse paradigm approach - Start with known TFs → Predict their regulatory activity → Classify cell-specific TF networks
 
