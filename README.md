@@ -24,7 +24,7 @@
 - **Rana H. Abu-Zeid** – Team Lead | Computational Biology & Project Management  
 - **Syrus Semawule** – Bioinformatician | Data processing & Biological Annotation 
 - **Emmanuel Aroma** – Bioinformaticain | ML Modeling & Pipline Control
-- **Tuheeb Jumah**   – Bioinformaticain | Manuscript writing
+- **Toheeb Jumah**   – Bioinformaticain | Manuscript writing
 
 Advisors:  
 - **Olaitan I. Awe** – Training officer, ASBCB, Cape Town, South Africa. 
