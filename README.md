@@ -71,7 +71,7 @@ Primary Dataset (Free & Open Access)
 | **Marker Genes**     | PanglaoDB           | `PanglaoDB_markers.tsv`                          |
 
 <p align="center">
-  <img src="figures/ASBCB_draw methodology.png" width="600"><br>
+  <img src="figures/readme_figures/ASBCB-update_2.drawio.png" width="600"><br>
   <i>Fig.2: Overview of project methodology</i>
 </p>
 
