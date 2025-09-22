@@ -63,7 +63,7 @@ Primary Dataset (Free & Open Access)
 
 | **Data Type**        | **Source**           | **File Format**                                   |
 |----------------------|----------------------|---------------------------------------------------|
-| **scATAC-seq**       | 10X Multiome        | `fragments.tsv.gz`, `peaks.bed`                  |
+| **scATAC-seq**       | 10X Multiome        | pbmc_unsorted_10k_filtered_feature_bc_matrix.h5,pbmc_unsorted_10k_per_barcode_metrics.csv,pbmc_unsorted_10k_atac_fragments.tsv.gz,pbmc_unsorted_10k_atac_peaks.bed  |
 | **scRNA-seq**        | 10X Multiome        | `filtered_feature_bc_matrix.h5`                  |
 | **Cell Metadata**    | 10X Multiome        | `singlecell.csv`                                 |
 | **TF Motifs**        | JASPAR 2022         | `JASPAR2022_CORE_vertebrates.meme`               |
