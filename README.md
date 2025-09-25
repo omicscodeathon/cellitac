@@ -38,10 +38,10 @@ Traditional scATAC-seq analysis follows a forward approach:
   <b> Open chromatin regions → Identify active TFs → Annotate cell types</b>
 </p>
 
-Our **reverse paradigm** starts with known transcription factors (TFs) and predicts their regulatory activity across cell types.  
+Our **reverse paradigm** leverages known TF motifs to predict cell-type-specific regulatory activity, enabling systematic discovery of regulatory programs and therapeutic targets.
 
 <p align="center">
-  <b> Known TFs → Predict regulatory regions → Classify cell-specific TF networks → Discover regulatory mechanisms</b>
+  <b> Known TFs → Predict regulatory regions → Classify cell-specific TF networks → Discover marker regulatory elements</b>
 </p>
 
 This enables systematic discovery of TF-driven programs, insights into cellular identity, and mechanisms of disease dysregulation.
@@ -50,11 +50,23 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
 
 ## Project Scope & Objectives  
 
-- **Primary Goal**: Build machine learning models to classify TFs to their regulatory regions in a cell-type-specific context  
+- **Primary Goal**: Build machine learning models to classify TFs to their regulatory regions to help in a cell-type-specific annotation  
 - **Secondary Goal**: Construct comprehensive TF regulatory networks for immune cells  
-- **Clinical Impact**: Identify therapeutic targets and biomarkers through TF activity profiling  
+- **Clinical Impact - Future work**: Identify therapeutic targets and biomarkers through TF activity profiling  
 
 ---
+### overview on pipline steps: 
+
+### Data Processing Pipeline
+
+```mermaid
+graph LR
+    A[Raw 10X Data] --> B[Quality Control]
+    B --> C[Cell Type Annotation]
+    C --> D[Feature Engineering]
+    D --> E[ML Classification]
+    E --> F[Results & Visualization]
+```
 
 ## Data Sources  
 Data Sources & Access
