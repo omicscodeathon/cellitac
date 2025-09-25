@@ -6,7 +6,7 @@
 
 <h1 align="center">Reverse TF-Machine Learning Modeling of Gene Regulation from scATAC-seq Data</h1>
 <h2 align="center">scATAC-tf</h2>
-<h4 align="center"><i>A novel TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
+<h4 align="center"><i>TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
 
 ---
 <p align="center">
