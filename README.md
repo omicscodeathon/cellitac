@@ -43,7 +43,6 @@ Our **reverse paradigm** leverages known TF motifs to predict cell-type-specific
 This enables systematic discovery of TF-driven programs, insights into cellular identity, and mechanisms of disease dysregulation.
 
 ---
-## Pipeline Architecture
 
 <p align="center">
  <img src="figures/ASBCB-front_image.png" width="600"><br>
@@ -60,7 +59,7 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
 
 ---
 
-
+## Pipeline Architecture
 ```mermaid
 graph LR
     A[Raw 10X Data] --> B[Quality Control]
@@ -98,6 +97,7 @@ Download the 10X Multiome dataset:
 https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0
 # ... (download the required files)
 ```
+## Project Methodology 
 
 <p align="center">
   <img src="figures/readme_figures/ASBCB-update_2.drawio.png" width="600"><br>
