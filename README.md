@@ -12,11 +12,7 @@
 <p align="center">
  <img src="figures/Icon.png" width="600"><br>
 </p>
----
-<p align="center">
- <img src="figures/ASBCB-front_image.png" width="600"><br>
-  <i>Fig.1: Overview of mechanisms influencing chromatin accessibility. Source: <a href="https://www.sc-best-practices.org/chromatin_accessibility/introduction.html">sc-best-practices.org</a> </i>
-</p>
+
 
 ---
 ## Contributors  
@@ -46,6 +42,11 @@ Our **reverse paradigm** leverages known TF motifs to predict cell-type-specific
 
 This enables systematic discovery of TF-driven programs, insights into cellular identity, and mechanisms of disease dysregulation.
 
+---
+<p align="center">
+ <img src="figures/ASBCB-front_image.png" width="600"><br>
+  <i>Fig.1: Overview of mechanisms influencing chromatin accessibility. Source: <a href="https://www.sc-best-practices.org/chromatin_accessibility/introduction.html">sc-best-practices.org</a> </i>
+</p>
 ---
 
 ## Project Scope & Objectives  
