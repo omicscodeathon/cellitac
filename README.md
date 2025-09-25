@@ -47,7 +47,7 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
  <img src="figures/ASBCB-front_image.png" width="600"><br>
   <i>Fig.1: Overview of mechanisms influencing chromatin accessibility. Source: <a href="https://www.sc-best-practices.org/chromatin_accessibility/introduction.html">sc-best-practices.org</a> </i>
 </p>
----
+
 
 ## Project Scope & Objectives  
 
@@ -56,9 +56,7 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
 - **Clinical Impact - Future work**: Identify therapeutic targets and biomarkers through TF activity profiling  
 
 ---
-### overview on pipline steps: 
 
-### Data Processing Pipeline
 
 ```mermaid
 graph LR
