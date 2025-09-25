@@ -62,12 +62,12 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
 ```mermaid
 graph LR
     A[Raw 10X Data] --> B[Quality Control]
-    B --> C[Cell Type Annotation]
-    C --> D[Feature Engineering]
+    B --> C[Feature Engineering & integration]
+    C --> D[ML Classification]
     D --> E[ML Classification]
-    E --> F[Results & Visualization]
+    E --> F[Evalutaion & Validation]
 ```
-
+## 
 ## Data Sources  
 Data Sources & Access
 Primary Dataset (Free & Open Access)
