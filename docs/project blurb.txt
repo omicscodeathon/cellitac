@@ -8,4 +8,4 @@ Feature importance / master regulators: Identifying the most critical TFs drivin
 
 Visualizations: Heatmaps of TF activity, dimensionality reduction plots colored by TF scores, and network diagrams.
 
-Potential targets for therapy: Highlight TFs that could be relevant for interventions or disease studies.
+Future enhancement :Potential targets for therapy: Highlight TFs that could be relevant for interventions or disease studies.
