@@ -1,278 +1,97 @@
-<p align="center">
-  <b>Omics Codeathon General Application - October 2025</b><br>
-  Organized by the African Society for Bioinformatics and Computational Biology (ASBCB) with support from the NIH Office of Data Science Strategy.<br>
-  Virtual event: October 7–18, 2025 
-</p>
+# scATAC-tf: 
 
-<h1 align="center">Reverse TF-Machine Learning Modeling of Gene Regulation from scATAC-seq Data</h1>
-<h2 align="center">scATAC-tf</h2>
-<h4 align="center"><i>TF-centric framework for analyzing single-cell chromatin accessibility</i></h4>
-
----
-<p align="center">
- <img src="figures/Icon.png" width="600"><br>
-</p>
+A reverse TF-centric machine learning framework that classifies peripheral blood mono-nuclear cells (PBMCs) using integrated chromatin accessibility and gene expression data.
 
 
----
-## Contributors  
+[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 
-- **Rana H. Abu-Zeid** – Team Lead | Computational Biology & Project Management  
-- **Syrus Semawule** – Bioinformatician | Data processing & Biological Annotation 
-- **Emmanuel Aroma** – Bioinformaticain | ML Modeling & Pipline Control
-- **Toheeb Jumah**   – Bioinformaticain | Manuscript writing
-
-Advisors:  
-- **Olaitan I. Awe** – Training officer, ASBCB, Cape Town, South Africa. 
----
-
-## Overview
-
-Traditional scATAC-seq analysis follows a forward approach:  
 
 <p align="center">
-  <b> Open chromatin regions → Identify active TFs → Annotate cell types</b>
+  <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ChatGPT%20Image%20Sep%2029%2C%202025%2C%2003_39_52%20PM.png" alt="scATAC-tf logo" width="300"  />
 </p>
 
-Our **reverse paradigm** leverages known TF motifs to predict cell-type-specific regulatory activity, enabling systematic discovery of regulatory programs and therapeutic targets.
+## Table of Contents
+1. [Background](#Background)
+2. [Presentation Video](#Demonstration_Video)
+3. [Code availability](#Code_availability)
+4. [License](#License)
+5. [Contributors](#Contributors)
+<br>
+
+## Background
+
+Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide profiling of regulatory elements at single-cell resolution.Traditional pipelines identify accessible regions first, then infer TF activity, limiting comprehensive understanding of regulatory programs driving cellular identity. This study develops a reverse TF-centric machine learning framework to classify peripheral blood mononuclear cells (PBMCs) using integrated chromatin accessibility and gene expression profiles. Our approach addresses data quality challenges through optimized preprocessing, implements class balancing via SMOTE, and employs ensemble ML methods for robust classification. The resulting computational pipeline enhances single-cell analysis capabilities and provides a systematic approach for discovering TF regulatory networks in immune cell populations.
+
+The current version includes analysis of:
+
+* 5 cell types, namely:
+
+   ★ Bcells
+   ★ Tcells
+   ★ Monocytes
+   ★ NK cells
+   ★ Neutrophils 
+
+This has application in cancer, autoimmune disorders, and developmental conditions since these are not caused by a single broken gene, but by a dysregulation of gene networks.
+   
+## Presentation Video
 
 <p align="center">
-  <b> Known TFs → Predict regulatory regions → Classify cell-specific TF networks → Discover marker regulatory elements</b>
+  <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing">
+    <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCB-front_image.png" alt="scATAC-tf" width="700" />
+  </a>
 </p>
 
-This enables systematic discovery of TF-driven programs, insights into cellular identity, and mechanisms of disease dysregulation.
-
----
-
-<p align="center">
- <img src="figures/ASBCB-front_image.png" width="600"><br>
-  <i>Fig.1: Overview of mechanisms influencing chromatin accessibility. Source: <a href="https://www.sc-best-practices.org/chromatin_accessibility/introduction.html">sc-best-practices.org</a> </i>
-</p>
-
----
-
-## Project Scope & Objectives  
-
-- **Primary Goal**: Build machine learning models to classify TFs to their regulatory regions to help in a cell-type-specific annotation  
-- **Secondary Goal**: Construct comprehensive TF regulatory networks for immune cells  
-- **Clinical Impact - Future work**: Identify therapeutic targets and biomarkers through TF activity profiling  
-
----
-
-## Pipeline Architecture
-```mermaid
-graph LR
-    A[Raw 10X Data] --> B[Quality Control]
-    B --> C[Feature Engineering & integration]
-    C --> D[ML Classification]
-    D --> E[ML Classification]
-    E --> F[Evalutaion & Validation]
-```
-## 
-
-### 📂 **Project Data Overview**
-
-##  Dataset:
-
-**Primary Dataset**: 10X Genomics PBMC Multiome (scATAC-seq + scRNA-seq)
-- **Source**: Healthy donor PBMCs (female, age 25)
-- **Cells**: ~12,016 estimated cells  
-- **RNA**: 1,720 median genes/cell, 3,302 median UMIs/cell
-- **ATAC**: 63,751 peaks, 9,254 median fragments/cell
-- **Size**: ~144 GB
-- **License**: Creative Commons Attribution 4.0
+## Code availability
 
-**Data Files Required**:
-```
-pbmc_unsorted_10k_filtered_feature_bc_matrix.h5
-pbmc_unsorted_10k_per_barcode_metrics.csv  
-pbmc_unsorted_10k_atac_fragments.tsv.gz
-pbmc_unsorted_10k_atac_peaks.bed
-```
+scATAC-tf has two main steps as listed below.
 
----
-###  Data Download
-Download the 10X Multiome dataset:
-```
-https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0
-# ... (download the required files)
-```
-## Project Methodology 
+1. Pre-processing workflow
 
-<p align="center">
-  <img src="figures/readme_figures/ASBCB-update_3.drawio.png" width="600"><br>
-  <i>Fig.2: Overview of project methodology</i>
-</p>
+Guide :  [Click Here](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)     
 
+2. Processing workflow
 
-**Data sets**
+Guide :  [Click Here](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)      
 
-10X Genomics Human PBMC Multiome (scATAC-seq + scRNA-seq)
+#### Demonstration Data
 
-Description: Cryopreserved human peripheral blood mononuclear cells (PBMCs) of a healthy female donor aged 25 were obtained by 10x Genomics from AllCells. Paired ATAC and Gene Expression libraries were generated from the isolated nuclei as described in the Chromium Next GEM Single Cell Multiome ATAC + Gene Expression User Guide (CG000338 Rev A) and sequenced on Illumina Novaseq 6000 v1 Kit (Forward Strand Dual-Index Workflow).
+Data is provided [here](https://www.10xgenomics.com/welcome?closeUrl=%2Fdatasets&lastTouchOfferName=PBMC%20from%20a%20Healthy%20Donor%20-%20No%20Cell%20Sorting%20%2810k%29&lastTouchOfferType=Dataset&product=chromium&redirectUrl=%2Fdatasets%2Fpbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0)
 
-Link to quality checks: [Dataset](https://github.com/omicscodeathon/scatactf/blob/main/data/Study2/pbmc_unsorted_10k%20-%20PBMC%20from%20a%20healthy%20donor%20-%20no%20cell%20sorting%20(10k).html)
+This guide will help you to organize your data correctly and could be used to test the pipeline.
 
-- Estimated number of cells: 12,016 
-- ATACMean raw read pairs per cell: 38,089 
-- ATAC Median high-quality fragments per cell: 9,254 
-- ATAC Number of peaks: 63,751 
-- GEX Mean raw reads per cell: 69,105 
-- GEX Median genes per cell: 1,720 
-- GEX Median UMI counts per cell: 3,302 
-- Linked genes: 12,576 
-- Linked peaks: 46,399 
-- Size: ~144 GB
+#### Computational Framework
 
-This dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. 10x citation
+Programming Languages: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac) 
 
-**Alternative Small Dataset (For Testing)**
-3k PBMCs scATAC-seq
-Description: Cryopreserved human peripheral blood mononuclear cells (PBMCs) from a healthy female donor aged 25 were obtained by 10x Genomics from AllCells.
+Pre-processing computational resources: 3.6 GHz 10-Core Intel Core i9 64GB RAM and 10GB storage
 
-Link to quality check: [Alternative dataset](https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_3k/pbmc_unsorted_3k_web_summary.html)
+Processing computational resources: 
 
-- Estimated number of cells: 3,009
-- ATAC Mean raw read pairs per cell: 27,511
-- ATAC Median high-quality fragments per cell: 9,877
-- ATAC Number of peaks: 81,156
-- GEX Mean raw reads per cell: 56,597
-- GEX Median genes per cell: 1,494
-- GEX Median UMI counts per cell: 2,764
-- Linked genes: 6,762
-- Linked peaks: 32,613
-- Size: ~24 GB
+The code of the two steps are open source.
 
-This dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. 10x citation
+<br>
 
-**Reference Resources (Open Source)**
-JASPAR 2022 – TF motif database
-Link: https://jaspar.elixir.no/download/data/2022/CORE/
-File: JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt (~50 MB)
-Content: 746 TF motifs for vertebrates
+## License
+**License :** Artistic license 2.0
 
-Cell Type Markers – From PanglaoDB
-Link: https://panglaodb.se/markers.html
-Format: CSV file with marker genes per cell type
 
-Human Reference Genome** 
-File: hg38.fa.gz (~3 GB)
+## Reporting Issues
+To report an issue please use the issues page (https://github.com/omicscodeathon/scatactf/issues). Please check existing issues before submitting a new one.
 
-Link: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
-File: hg38.fa.gz (~3 GB)
 
----
-### **Input Features** *(shape: n_cells × n_features)*
+## Contribute to Project
+You can offer to help with the further development of this project by making pull requests on this repo. To do so, fork this repository and make the proposed changes. Once completed and tested, submit a pull request to this repo.
 
-- **TF Motif Enrichment Scores:** 746 TFs from JASPAR  
-- **Chromatin Accessibility Profiles:** Per-cell accessibility data  
-- **Gene Expression Data:** Derived from paired scRNA-seq  
-- **Cell Metadata:** Includes cell type, batch information, and quality metrics  
-- **Genomic Context Features:** Sequence composition, TSS distance  
+## Contributors
 
----
+1. Rana H. Abu-Zeid Student, School of Computing and Data Science, Badya University ,Cairo, Egypt | Team Lead - Project Management   
 
-### **Expected Labels** $$$$$$$
+2. Syrus Semawule, African Center of Excellence in Bioinformatics and Data Intensive Sciences, The Infectious Disease Institute, Makerere University, Kampala, Uganda
+ | Bioinformatician - Data processing & Biological Annotation 
 
-- **Cell Type Annotations:**  
-  `['T_cells', 'B_cells', 'Monocytes', 'NK_cells']`  
+3. Emmanuel Aroma, Department of Immunology and Molecular Biology, School of Biomedical Sciences, Makerere University, Kampala, Uganda | Bioinformaticain - ML Modeling & Pipeline Control
 
-- **TF Activity Ground Truth:**  
-  Based on ChIP-seq data when available  
+4. Toheeb Jumah, Department of Human Anatomy, Faculty of Basic Medical Sciences, College of Medical Sciences, Ahmadu Bello University, Zaria, Nigeria | Bioinformaticain - Manuscript writing & ML Modeling
 
-
-# Workflow  
-
-### **Block 1: Dataset Collection & Setup**  
-1. Download 10X PBMC Multiome dataset (scATAC + scRNA)  
-2. Acquire reference databases (JASPAR, ENCODE, GTEx, marker genes)  
-3. Configure environment (Python, PyTorch, bedtools, GPU setup)  
-
----
-
-### **Block 2: Data Preprocessing**  
-4. Quality control (remove low-quality cells, doublets, rare peaks)  
-5. Normalize accessibility data (log transform, batch correction)  
-6. Annotate cell types using RNA marker genes  
-
----
-
-### **Block 3: Feature Engineering**  
-7. Scan DNA sequences for TF motifs (FIMO)  
-8. Build TF activity matrix [cells × TFs]  
-9. Add genomic features (TSS enrichment, gene expression, sequence context)  
-
----
-
-### **Block 4: Model Development**  
-10. Split dataset into train/validation/test  
-11. Train baseline ML models (RF, XGBoost, Logistic Regression)  
-12. Develop deep learning models (Transformers, GNNs, attention-based)  $$$$$$ mat not used....
-
----
-
-### **Block 5: Training & Optimization**  
-13. Cross-validation & hyperparameter tuning  
-14. Evaluate model performance (Accuracy, F1-score, confusion matrix)  
-15. Select best-performing architecture  
-
----
-
-### **Block 6: TF Activity Prediction**  
-16. Generate TF activity scores per cell type  
-17. Build TF-cell type regulatory networks  
-18. Discover novel TF-region associations  
-
----
-
-### **Block 7: Biological Validation**  
-19. Compare predictions with known TF functions  
-20. Validate with external datasets (ENCODE, ChIP-seq)  
-21. Perform pathway enrichment & disease relevance analysis  
-
----
-
-### **Block 8: Biological Interpretation & Annotation**  
-22. Identify master regulators via network centrality  
-23. Define TF signatures for each immune cell type  
-24. Link TF dysregulation to diseases and therapeutic targets  
-
----
-
-### **Block 9: Results & Visualization**  
-25. Generate heatmaps, network graphs, cell type plots  
-26. Summarize model performance and biological findings  
-27. Package reproducible workflows and deliverables  
-
----
-
-## Computational Framework
-
-- **Programming Languages**: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac)  
-- **Single-cell**: Scanpy, AnnData, episcanpy  $$$$$$$$
-- **Genomics**: pybedtools, pyranges, pyfaidx  
-- **Visualization**: matplotlib, seaborn, plotly  
-- **Infrastructure**: Jupyter Notebook
-
----
-
-  ## Expected Outputs**
-
-Cell type classification accuracy 
-TF importance rankings per cell type
-Basic heatmap visualizations
-Model performance metrics
-
----
-
-
-
-## Contact  
-
-- Email: rana.abuzeid@badyau.edu.eg  ,---------,-------------,----------
-- GitHub Issues: For bug reports & feature requests  
-
-If you find this project useful, please give it a **STAR** on GitHub! ⭐
-
-
-
+5. Olaitan I. Awe, African Society for Bioinformatics and Computational Biology (ASBCB), Cape Town, South Africa | Project Advisor
