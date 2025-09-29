@@ -100,7 +100,7 @@ https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-1
 ## Project Methodology 
 
 <p align="center">
-  <img src="figures/readme_figures/ASBCB-update_2.drawio.png" width="600"><br>
+  <img src="figures/readme_figures/ASBCB-update_3.drawio.png" width="600"><br>
   <i>Fig.2: Overview of project methodology</i>
 </p>
 
