@@ -105,5 +105,9 @@ You can offer to help with the further development of this project by making pul
 | **Toheeb Jumah** | Department of Human Anatomy, Faculty of Basic Medical Sciences, College of Medical Sciences, Ahmadu Bello University, Zaria, Nigeria | Bioinformatician – Manuscript Writing & ML Modeling |
 | **Olaitan I. Awe** | African Society for Bioinformatics and Computational Biology (ASBCB), Cape Town, South Africa | Project Advisor |
 
-📧 **Team Leader Contact Mail:** rana.hamed@badyauni.edu.eg  
+📧 ****Rana Hamed Abu-Zeid**  :** rana.hamed@badyauni.edu.eg  
+📧 ****Syrus Semawule**  :** semawulesyrus@gmail.com  
+📧 ****Emmanuel Aroma**  :** emmatitusaroma@gmail.com  
+📧 ****Toheeb Jumah**  :** jumahtoheeb@gmail.com  
+
 
