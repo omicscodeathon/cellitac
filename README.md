@@ -13,12 +13,13 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 ## Table of Contents
 1. [Background](#background)
 2. [Presentation Video](#presentation-video)
-3. [Code Availability](#code-availability)
-4. [License](#license)
-5. [Contributors](#contributors)
+3. [Workflow](#Workflow)
+4. [Code Availability](scatactf/scripts/)
+6. [License](#scatactf/LICENSE)
+7. [Contributors](#Contributors)
 <br>
 
-## Background
+## 1.Background
 
 Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide profiling of regulatory elements at single-cell resolution.Traditional pipelines identify accessible regions first, then infer TF activity, limiting comprehensive understanding of regulatory programs driving cellular identity. This study develops a reverse TF-centric machine learning framework to classify peripheral blood mononuclear cells (PBMCs) using integrated chromatin accessibility and gene expression profiles. Our approach addresses data quality challenges through optimized preprocessing, implements class balancing via SMOTE, and employs ensemble ML methods for robust classification. The resulting computational pipeline enhances single-cell analysis capabilities and provides a systematic approach for discovering TF regulatory networks in immune cell populations.
 
@@ -34,7 +35,7 @@ The current version includes analysis of:
 
 This has application in cancer, autoimmune disorders, and developmental conditions since these are not caused by a single broken gene, but by a dysregulation of gene networks.
    
-## Presentation Video
+## 2.Presentation Video
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing">
@@ -44,7 +45,7 @@ This has application in cancer, autoimmune disorders, and developmental conditio
 
 
 
-### Workflow
+### 3.Workflow
 <p align="center">
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCBdrawio_4.png" alt="scATAC-tf" width="700" />
 </p>
@@ -56,6 +57,12 @@ This has application in cancer, autoimmune disorders, and developmental conditio
    A complete walkthrough for running the scATAC-tf pipeline.  
 
 ---
+### 4.Code Avilability:
+
+All scripts for the **scATAC-tf** project (Python & R) are available in the repository:
+
+👉 Browse the scripts: [scatactf/scripts/](scatactf/scripts/)
+
 
 ###  Demonstration Data  
 - Public dataset: [PBMC from a Healthy Donor (10k, 10x Genomics)](https://www.10xgenomics.com/welcome?closeUrl=%2Fdatasets&lastTouchOfferName=PBMC%20from%20a%20Healthy%20Donor%20-%20No%20Cell%20Sorting%20%2810k%29&lastTouchOfferType=Dataset&product=chromium&redirectUrl=%2Fdatasets%2Fpbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0)  
