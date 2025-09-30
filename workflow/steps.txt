@@ -1,11 +1,149 @@
-Steps: [Convert the steps into workflow diagram (include tools for each step) and update README.md]
-. Pull down the reads
-.
-.
-.
-.
-.
-.
-.
-.
-.
+Based on our complete pipeline (R preprocessing + Python ML frameworks) here's a workflow diagram structure for you to easy follow the project:
+
+---
+
+# **scATAC-tf Workflow Steps**
+
+## **Phase 1: Data Acquisition**
+**Step 1:** Download PBMC Multiome dataset from 10X Genomics  
+**Tool:** wget/browser  
+**Input:** URL  
+
+
+---
+
+## **Phase 2: R Preprocessing (Part1.r)**
+
+**Step 2:** Load RNA data and create Seurat object  
+**Tool:** Seurat v4.3.0  
+**Output:** Seurat object with RNA counts
+
+**Step 3:** RNA quality control filtering  
+**Tool:** Seurat  
+**Parameters:** min_genes=500, max_genes=7000, max_mito=20%  
+**Output:** Filtered RNA data
+
+**Step 4:** RNA normalization and feature selection  
+**Tool:** Seurat (LogNormalize, FindVariableFeatures)  
+**Output:** 2000 variable genes
+
+**Step 5:** Dimensionality reduction (PCA, UMAP)  
+**Tool:** Seurat  
+**Output:** UMAP coordinates
+
+**Step 6:** Cell type annotation  
+**Tool:** SingleR  
+**Output:** Cell type labels
+
+---
+
+## **Phase 3: ATAC Preprocessing (Part_2.r)**
+
+**Step 7:** Load ATAC fragments and peaks  
+**Tool:** Signac v1.9.0  
+**Output:** ChromatinAssay object
+
+**Step 8:** ATAC quality control filtering  
+**Tool:** Signac  
+**Parameters:** TSS_enrichment>2, nucleosome_signal<4  
+**Output:** Filtered ATAC data
+
+**Step 9:** ATAC normalization (TF-IDF + LSI)  
+**Tool:** Signac  
+**Output:** 5000 accessible peaks
+
+**Step 10:** Multi-modal data integration  
+**Tool:** Base R  
+**Output:** Combined feature matrix (7000 features)
+
+**Step 11:** Train/test split creation  
+**Tool:** Base R  
+**Parameters:** 70/30 stratified split  
+
+
+---
+
+## **Phase 4: Python ML Analysis**
+
+### **Framework Selection (Choose One)**
+
+**Option A: Baseline (Preliminary_result.ipynb)**  
+- 3 models: RF, XGBoost, SVM  
+- 4 cell types (rare classes removed)
+
+**Option B: Extended-Filtered **  
+- 5 models: +Logistic Regression, Neural Network  
+- 4 cell types (rare classes removed)
+
+**Option C: Extended-Complete **  
+- 5 models  
+- 6 cell types (SMOTE balancing)
+
+---
+
+**Step 12:** Load processed data  
+**Tool:** pandas  
+**Input:** CSV files 
+**Output:** Feature matrix, labels, splits
+
+**Step 13:** Feature engineering  
+**Tool:** scikit-learn  
+**Actions:** Remove zero-variance, correlation filtering, SelectKBest  
+**Output:** Engineered feature matrix
+
+**Step 14:** Class imbalance handling  
+**Tool:** imblearn (SMOTE) or filtering  
+**Output:** Balanced training set
+
+**Step 15:** Feature scaling  
+**Tool:** StandardScaler  
+**Output:** Normalized features
+
+**Step 16:** Model training  
+**Tool:** scikit-learn  
+**Models:** RF, XGBoost, SVM, LR, Neural Network  
+**Output:** Trained models
+
+**Step 17:** Cross-validation  
+**Tool:** StratifiedKFold  
+**Parameters:** 5-fold CV  
+**Output:** CV scores
+
+**Step 18:** Overfitting analysis  
+**Tool:** learning_curve  
+**Output:** Learning curves, overfitting metrics
+
+**Step 19:** Performance evaluation  
+**Tool:** scikit-learn.metrics  
+**Output:** Accuracy, F1, Precision, Recall, AUC
+
+**Step 20:** Feature importance extraction  
+**Tool:** Model-specific methods  
+**Output:** Feature rankings
+
+**Step 21:** Cell-type specific analysis  
+**Tool:** SelectKBest (f_classif)  
+**Output:** Cell-type signatures
+
+**Step 22:** Visualization generation  
+**Tool:** matplotlib, seaborn, plotly, networkx  
+**Outputs:**  
+- Feature importance heatmaps  
+- Learning curves  
+- Confusion matrices  
+- TF-cell type networks  
+- Performance dashboards
+
+**Step 23:** Results export  
+**Tool:** pandas, joblib  
+**Output:** Models, CSVs, plots, reports
+
+---
+
+## **Summary**
+**Total Steps:** 23  
+**Total Runtime:** 3-5 hours  
+**Key Tools:** Seurat, Signac, SingleR, scikit-learn, NetworkX  
+**Final Outputs:** Trained models, performance metrics, visualizations, networks
+
+---
