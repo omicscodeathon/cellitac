@@ -110,8 +110,8 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 - **Basic TF Network**  
   ![Basic TF Network](output/output_First_Framework_scATAC_tf/basic_tf_network.png)
 
-- **Simple Feature Heatmap**  
-  ![Simple Feature Heatmap](output/output_First_Framework_scATAC_tf/simple_feature_heatmap.png)
+- **Feature Importance**  
+  ![Feature Importance](output/output_First_Framework_scATAC_tf/feature_importance.png)
 
 - **Class Separation PCA**  
   ![Class Separation PCA](output/output_First_Framework_scATAC_tf/class_separation_pca.png)
@@ -136,6 +136,25 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 
 - **TF Activity Dotplot**  
   ![TF Activity Dotplot](output/output_Second_Framework_after_dropping/Plots/tf_activity_dotplot.png)
+
+  - **Top TFs per Cell Type**  
+  ![Top TFs per Cell Type](output/output_Second_Framework_after_dropping/Plots/top_tfs_per_celltype.png)
+
+---
+
+
+### Third Framework Visualizations  
+
+- **Learning Curves**  
+  ![Learning Curves](output/output_Third_Framework_without_dropping/Plots/learning_curves.png)
+
+  - **TF Activity Dotplot**  
+  ![TF Activity Dotplot](output/output_Third_Framework_without_dropping/Plots/tf_activity_dotplot.png)
+
+- **Top TFs per Cell Type**  
+  ![Top TFs per Cell Type](output/output_Third_Framework_without_dropping/Plots/top_tfs_per_celltype.png)
+
+
 
 ---
 
