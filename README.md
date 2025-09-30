@@ -48,10 +48,10 @@ This has application in cancer, autoimmune disorders, and developmental conditio
 <p align="center">
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCBdrawio_4.png" alt="scATAC-tf" width="700" />
 </p>
-##  Code Availability  
+ 
   
 
-### *Detailed Workflow**  
+### *Detailed Workflow*
    👉 [View the Step-by-Step Guide](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)  
    A complete walkthrough for running the scATAC-tf pipeline.  
 
@@ -59,7 +59,6 @@ This has application in cancer, autoimmune disorders, and developmental conditio
 
 ###  Demonstration Data  
 - Public dataset: [PBMC from a Healthy Donor (10k, 10x Genomics)](https://www.10xgenomics.com/welcome?closeUrl=%2Fdatasets&lastTouchOfferName=PBMC%20from%20a%20Healthy%20Donor%20-%20No%20Cell%20Sorting%20%2810k%29&lastTouchOfferType=Dataset&product=chromium&redirectUrl=%2Fdatasets%2Fpbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0)  
-- Use this dataset to **test the pipeline** and learn how to correctly organize input data.  
 
 ---
 
@@ -96,15 +95,15 @@ To report an issue please use the issues page (https://github.com/omicscodeathon
 ## Contribute to Project
 You can offer to help with the further development of this project by making pull requests on this repo. To do so, fork this repository and make the proposed changes. Once completed and tested, submit a pull request to this repo.
 
-## Contributors
+##  Contributors  
 
-1. Rana H. Abu-Zeid Student, School of Computing and Data Science, Badya University ,Cairo, Egypt | Team Lead - Project Management   
+| Name | Affiliation | Role |
+|------|-------------|------|
+| **Rana H. Abu-Zeid** | Student, School of Computing and Data Science, Badya University, Cairo, Egypt | Team Lead – Project Management |
+| **Syrus Semawule** | African Center of Excellence in Bioinformatics and Data Intensive Sciences, The Infectious Disease Institute, Makerere University, Kampala, Uganda | Bioinformatician – Data Processing & Biological Annotation |
+| **Emmanuel Aroma** | Department of Immunology and Molecular Biology, School of Biomedical Sciences, Makerere University, Kampala, Uganda | Bioinformatician – ML Modeling & Pipeline Control |
+| **Toheeb Jumah** | Department of Human Anatomy, Faculty of Basic Medical Sciences, College of Medical Sciences, Ahmadu Bello University, Zaria, Nigeria | Bioinformatician – Manuscript Writing & ML Modeling |
+| **Olaitan I. Awe** | African Society for Bioinformatics and Computational Biology (ASBCB), Cape Town, South Africa | Project Advisor |
 
-2. Syrus Semawule, African Center of Excellence in Bioinformatics and Data Intensive Sciences, The Infectious Disease Institute, Makerere University, Kampala, Uganda
- | Bioinformatician - Data processing & Biological Annotation 
+📧 **Team Leader Contact Mail:** rana.hamed@badyauni.edu.eg  
 
-3. Emmanuel Aroma, Department of Immunology and Molecular Biology, School of Biomedical Sciences, Makerere University, Kampala, Uganda | Bioinformaticain - ML Modeling & Pipeline Control
-
-4. Toheeb Jumah, Department of Human Anatomy, Faculty of Basic Medical Sciences, College of Medical Sciences, Ahmadu Bello University, Zaria, Nigeria | Bioinformaticain - Manuscript writing & ML Modeling
-
-5. Olaitan I. Awe, African Society for Bioinformatics and Computational Biology (ASBCB), Cape Town, South Africa | Project Advisor
