@@ -67,11 +67,11 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 ```mermaid
 graph LR
     A[Raw 10X Data] --> B[Quality Control]
-    B --> C[Feature Engineering & integration]
+    B --> C[Feature Engineering & Integration]
     C --> D[ML Building]
-    D --> E[Evalutaion Metrics]
-    E --> F[Validation & interpretation]
----
+    D --> E[Evaluation Metrics]
+    E --> F[Validation & Interpretation]
+
 
 ### 4.Code Avilability:
 
