@@ -69,21 +69,24 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 
 👉 Browse the scripts: [scripts/](scripts/)
 
+---
 
 ###  Demonstration Data  
 - Public dataset: [PBMC from a Healthy Donor (10k, 10x Genomics)](https://www.10xgenomics.com/welcome?closeUrl=%2Fdatasets&lastTouchOfferName=PBMC%20from%20a%20Healthy%20Donor%20-%20No%20Cell%20Sorting%20%2810k%29&lastTouchOfferType=Dataset&product=chromium&redirectUrl=%2Fdatasets%2Fpbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0)  
 
-## The main analysis includes the following cell types:
+---
 
-**Cell types retained** (≥10 samples):
-* B cells (n=134)
-* Monocytes (n=623)
-* NK cells (n=82)
-* T cells (n=616)
+## The main analysis includes the following cell types: 
+
+**Cell types retained** :
+* B cells 
+* Monocytes 
+* NK cells
+* T cells 
 
 **Excluded rare cell types** (<10 samples):
-* HSC-G-CSF (n=3)
-* Pre-B cells CD34- (n=5)
+* HSC-G-CSF 
+* Pre-B cells CD34- 
 
 **Final dataset after filtering:** about ≈ 1,400 cells across 4 cell types
   
