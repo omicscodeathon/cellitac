@@ -28,10 +28,10 @@
     1.2.Log-normalization
     
 ***2.ATAC Features:***
-    3.1.Select top accessible peaks
-    3.2.Normalization with LSI
-    3.3.Multi-modal integration
-    3.4.Feature selection & scaling
+    2.1.Select top accessible peaks
+    2.2.Normalization with LSI
+    2.3.Multi-modal integration
+    2.4.Feature selection & scaling
 
 ---
 
