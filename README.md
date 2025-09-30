@@ -49,10 +49,9 @@ This has application in cancer, autoimmune disorders, and developmental conditio
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCBdrawio_4.png" alt="scATAC-tf" width="700" />
 </p>
 ##  Code Availability  
+  
 
-The **scATAC-tf** project consists of two main steps:  
-
-1. **Detailed Workflow**  
+### *Detailed Workflow**  
    👉 [View the Step-by-Step Guide](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)  
    A complete walkthrough for running the scATAC-tf pipeline.  
 
@@ -78,40 +77,9 @@ The **scATAC-tf** project consists of two main steps:
 | Step | Recommended Resources |
 |------|------------------------|
 | **Pre-processing** | 3.6 GHz 10-Core Intel Core i9, 64 GB RAM, 10 GB storage |
-| **Processing**     | Open-source code available (optimized for scalability) |
+| **Modeling & Scripts**     | Open-source code available (optimized for scalability) |
 
----
 
-----
-----
-## Code Availability  
-
-The **scATAC-tf** project consists of two main steps:  
-
-1. **Detailed Workflow**  
-   A step-by-step guide to run Sc-ATAC-tf pipeline with is available here:  
-   👉 [View the Guide](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)  
-    
-
-#### Demonstration Data
-
-Data is provided [here](https://www.10xgenomics.com/welcome?closeUrl=%2Fdatasets&lastTouchOfferName=PBMC%20from%20a%20Healthy%20Donor%20-%20No%20Cell%20Sorting%20%2810k%29&lastTouchOfferType=Dataset&product=chromium&redirectUrl=%2Fdatasets%2Fpbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0)
-
-This guide will help you to organize your data correctly and could be used to test the pipeline.
-
-#### Computational Framework
-
-Programming Languages: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac) 
-
-#### Pre-processing computational resources: 
-
-3.6 GHz 10-Core Intel Core i9 64GB RAM and 10GB storage
-
-#### Processing computational resources: 
-
-The code of the two steps are open source.
-
-----
 ----
 
 <br>
