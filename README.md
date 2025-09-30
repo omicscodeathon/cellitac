@@ -97,9 +97,9 @@ You can offer to help with the further development of this project by making pul
 
 ##  Contributors  
 
-| Name | Affiliation | Role |
-|------|-------------|------|
-| **Rana H. Abu-Zeid** | Student, School of Computing and Data Science, Badya University, Cairo, Egypt | Team Lead – Project Management |
+|   Name   | Affiliation | Role |
+|----------|-------------|------|
+| **Rana Hamed** | Student, School of Computing and Data Science, Badya University, Cairo, Egypt | Team Lead – Project Management |
 | **Syrus Semawule** | African Center of Excellence in Bioinformatics and Data Intensive Sciences, The Infectious Disease Institute, Makerere University, Kampala, Uganda | Bioinformatician – Data Processing & Biological Annotation |
 | **Emmanuel Aroma** | Department of Immunology and Molecular Biology, School of Biomedical Sciences, Makerere University, Kampala, Uganda | Bioinformatician – ML Modeling & Pipeline Control |
 | **Toheeb Jumah** | Department of Human Anatomy, Faculty of Basic Medical Sciences, College of Medical Sciences, Ahmadu Bello University, Zaria, Nigeria | Bioinformatician – Manuscript Writing & ML Modeling |
