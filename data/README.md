@@ -16,6 +16,8 @@ pbmc_unsorted_10k_per_barcode_metrics.csv
 pbmc_unsorted_10k_atac_fragments.tsv.gz
 pbmc_unsorted_10k_atac_peaks.bed
 ```
+In the [`data`](./data/) folder, you will find additional datasets (`Study1`, `Study2`, `Study3`, …)  
+that can be used for testing or further analysis.
 
 ---
 ###  Data Download
