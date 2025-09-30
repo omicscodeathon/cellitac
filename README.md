@@ -26,10 +26,10 @@ The current version includes analysis of:
 
 * 5 cell types, namely:
 
-   ★ Bcells
-   ★ Tcells
+   ★ B-cells
+   ★ T-cells
    ★ Monocytes
-   ★ NK cells
+   ★ NK-cells
    ★ Neutrophils 
 
 This has application in cancer, autoimmune disorders, and developmental conditions since these are not caused by a single broken gene, but by a dysregulation of gene networks.
@@ -42,6 +42,14 @@ This has application in cancer, autoimmune disorders, and developmental conditio
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCBdrawio_4.png" alt="scATAC-tf" width="700" />
   </a>
 </p>
+
+
+## *Methods
+### Workflow
+<p align="center">
+    <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCBdrawio_4.png" alt="scATAC-tf" width="700" />
+</p>
+
 
 ## Code availability
 
