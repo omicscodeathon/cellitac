@@ -71,10 +71,14 @@ This guide will help you to organize your data correctly and could be used to te
 #### Computational Framework
 
 Programming Languages: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac) 
+-![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
+-![R](https://img.shields.io/badge/R-4.0%2B-lightgrey.svg)
 
-Pre-processing computational resources: 3.6 GHz 10-Core Intel Core i9 64GB RAM and 10GB storage
+#### Pre-processing computational resources: 
 
-Processing computational resources: 
+3.6 GHz 10-Core Intel Core i9 64GB RAM and 10GB storage
+
+#### Processing computational resources: 
 
 The code of the two steps are open source.
 
