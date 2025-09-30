@@ -104,6 +104,40 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 **Final dataset after filtering:** about ≈ 1,400 cells across 4 cell types
   
 ---
+### Main Framework results  :
+
+
+- **Basic TF Network**  
+  ![Basic TF Network](output/output_First_Framework_scATAC_tf/basic_tf_network.png)
+
+- **Simple Feature Heatmap**  
+  ![Simple Feature Heatmap](output/output_First_Framework_scATAC_tf/simple_feature_heatmap.png)
+
+- **Class Separation PCA**  
+  ![Class Separation PCA](output/output_First_Framework_scATAC_tf/class_separation_pca.png)
+
+- **Model performance results :**
+<p align="center">
+
+| Model          | Accuracy   | Precision  | Recall     | F1 Score   | AUC        |
+|----------------|------------|------------|------------|------------|------------|
+| Random Forest  | 0.9725     | 0.9718     | 0.9725     | 0.9721     | 0.9983     |
+| XGBoost        | 0.9828     | 0.9827     | 0.9828     | 0.9825     | 0.9992     |
+| SVM            | 0.9794     | 0.9800     | 0.9794     | 0.9780     | 0.9977     |
+
+</p>
+
+---
+
+### Second Framework results  
+
+- **Learning Curves**  
+  ![Learning Curves](output/output_Second_Framework_after_dropping/Plots/learning_curves.png)
+
+- **TF Activity Dotplot**  
+  ![TF Activity Dotplot](output/output_Second_Framework_after_dropping/Plots/tf_activity_dotplot.png)
+
+---
 
 ###  Computational Framework  
 
@@ -135,18 +169,6 @@ All scripts use fixed random seed (42) for reproducibility
 
 
 ----
-
-Results of core Framework_1 :
-<p align="center">
-
-| Model          | Accuracy   | Precision  | Recall     | F1 Score   | AUC        |
-|----------------|------------|------------|------------|------------|------------|
-| Random Forest  | 0.9725     | 0.9718     | 0.9725     | 0.9721     | 0.9983     |
-| XGBoost        | 0.9828     | 0.9827     | 0.9828     | 0.9825     | 0.9992     |
-| SVM            | 0.9794     | 0.9800     | 0.9794     | 0.9780     | 0.9977     |
-
-</p>
-
 
 ### 6.License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
