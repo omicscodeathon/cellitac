@@ -19,7 +19,7 @@ pbmc_unsorted_10k_atac_peaks.bed
 
 ---
 ###  Data Download
-Go to the [accessions](./accessions/) folder to find a text file with download instructions,  
+See the [accessions.txt](./accessions.txt) file for dataset download instructions,  
 or follow the link provided below
 
 Download the 10X Multiome dataset:
