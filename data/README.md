@@ -16,10 +16,7 @@ pbmc_unsorted_10k_per_barcode_metrics.csv
 pbmc_unsorted_10k_atac_fragments.tsv.gz
 pbmc_unsorted_10k_atac_peaks.bed
 ```
-Also here, you will find additional datasets (`Study1`, `Study2`, `Study3`)  
-that can be used for testing or further analysis.
 
----
 ###  Data Download
 Please navigate to the [accessions](../accessions/) directory to find the download instructions file.
 or follow the link provided below
@@ -29,3 +26,8 @@ Download the 10X Multiome dataset:
 https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0
 # ... (download the required files)
 ```
+Also here, you will find additional datasets (`Study1`, `Study2`, `Study3`)  
+that can be used for testing or further analysis.
+
+---
+
