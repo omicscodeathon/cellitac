@@ -105,6 +105,19 @@ All scripts use fixed random seed (42) for reproducibility
 
 
 ----
+
+Results of core Framework_1 :
+<p align="center">
+
+| Model          | Accuracy   | Precision  | Recall     | F1 Score   | AUC        |
+|----------------|------------|------------|------------|------------|------------|
+| Random Forest  | 0.9725     | 0.9718     | 0.9725     | 0.9721     | 0.9983     |
+| XGBoost        | 0.9828     | 0.9827     | 0.9828     | 0.9825     | 0.9992     |
+| SVM            | 0.9794     | 0.9800     | 0.9794     | 0.9780     | 0.9977     |
+
+</p>
+
+
 ### 6.License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
