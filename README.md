@@ -39,12 +39,11 @@ This has application in cancer, autoimmune disorders, and developmental conditio
 <p align="center">
   <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing">
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCB-front_image.png" alt="scATAC-tf" width="700" />
-    <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCBdrawio_4.png" alt="scATAC-tf" width="700" />
   </a>
 </p>
 
 
-## *Methods
+
 ### Workflow
 <p align="center">
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCBdrawio_4.png" alt="scATAC-tf" width="700" />
