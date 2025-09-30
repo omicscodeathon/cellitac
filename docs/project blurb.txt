@@ -4,8 +4,6 @@ TF activity scores per cell: A matrix where each row is a cell, each column is a
 
 Cell-type-specific regulatory networks: Graphs showing which TFs regulate which genes in each immune cell type.
 
-Feature importance / master regulators: Identifying the most critical TFs driving cell identity or immune function.
+Feature importance : Identifying the most critical TFs driving cell identity or immune function.
 
 Visualizations: Heatmaps of TF activity, dimensionality reduction plots colored by TF scores, and network diagrams.
-
-Future enhancement :Potential targets for therapy: Highlight TFs that could be relevant for interventions or disease studies.
