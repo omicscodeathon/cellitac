@@ -123,3 +123,12 @@ You can offer to help with the further development of this project by making pul
 📧 ****Toheeb Jumah**  :** jumahtoheeb@gmail.com  
 
 
+---
+### Acknowledgments  
+
+We thank the NIH Office of Data Science Strategy for their support before and during the April 2025 Omics Codeathon, co-organized with the African Society for Bioinformatics and Computational Biology (ASBCB).  
+We also thank Dr. Awe for his ongoing guidance and all collaborators who contributed to this project.  
+
+---
+*This project reflects a collaborative effort towards advancing integrative bioinformatics methods, and we look forward to its continued development and impact within the scientific community.*
+
