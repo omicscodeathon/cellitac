@@ -15,11 +15,11 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 2. [Presentation Video](#2presentation-video)
 3. [Workflow](#3workflow)
 4. [Code Availability](#4code-avilability)
-6. [License](#6LICENSE)
-7. [Contributors](#Contributors)
+5. [License](#6LICENSE)
+6. [Contributors](#Contributors)
 <br>
 
-## 1.Background
+### 1.Background
 
 Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide profiling of regulatory elements at single-cell resolution.Traditional pipelines identify accessible regions first, then infer TF activity, limiting comprehensive understanding of regulatory programs driving cellular identity. This study develops a reverse TF-centric machine learning framework to classify peripheral blood mononuclear cells (PBMCs) using integrated chromatin accessibility and gene expression profiles. Our approach addresses data quality challenges through optimized preprocessing, implements class balancing via SMOTE, and employs ensemble ML methods for robust classification. The resulting computational pipeline enhances single-cell analysis capabilities and provides a systematic approach for discovering TF regulatory networks in immune cell populations.
 
@@ -35,7 +35,7 @@ The current version includes analysis of:
 
 This has application in cancer, autoimmune disorders, and developmental conditions since these are not caused by a single broken gene, but by a dysregulation of gene networks.
    
-## 2.Presentation Video
+### 2.Presentation Video
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing">
@@ -95,7 +95,7 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 
 <br>
 
-## License
+### 5.License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
