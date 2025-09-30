@@ -64,9 +64,9 @@ This enables systematic discovery of TF-driven programs, insights into cellular 
 graph LR
     A[Raw 10X Data] --> B[Quality Control]
     B --> C[Feature Engineering & integration]
-    C --> D[ML Classification]
-    D --> E[ML Classification]
-    E --> F[Evalutaion & Validation]
+    C --> D[ML Building]
+    D --> E[Evalutaion Metrics]
+    E --> F[Validation & interpretation]
 ```
 ## 
 
