@@ -62,16 +62,19 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
    👉 [View the Step-by-Step Guide](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)  
    A complete walkthrough for running the scATAC-tf pipeline.  
 
-## Pipeline Architecture
 
+---
+
+## Pipeline Architecture
 ```mermaid
 graph LR
     A[Raw 10X Data] --> B[Quality Control]
-    B --> C[Feature Engineering & Integration]
+    B --> C[Feature Engineering & integration]
     C --> D[ML Building]
-    D --> E[Evaluation Metrics]
-    E --> F[Validation & Interpretation]
-
+    D --> E[Evalutaion Metrics]
+    E --> F[Validation & interpretation]
+```
+## 
 
 ### 4.Code Avilability:
 
