@@ -15,8 +15,9 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 2. [Presentation Video](#2presentation-video)
 3. [Workflow](#3workflow)
 4. [Code Availability](#4code-avilability)
-5. [License](#5license)
-6. [Contributors](#Contributors)
+5. [Reproducibility](#5Reproducibility)
+6. [License](#6license)
+7. [Contributors](#Contributors)
 <br>
 
 ### 1.Background
@@ -95,7 +96,16 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 
 <br>
 
-### 5.License
+### 5.Reproducibility
+
+#### Random Seeds
+All scripts use fixed random seed (42) for reproducibility
+#### Packagies & dependencies
+[all package versions (R - Python) specified for this project](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)  
+
+
+----
+### 6.License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
