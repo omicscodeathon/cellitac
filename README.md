@@ -33,18 +33,9 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 
 Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide profiling of regulatory elements at single-cell resolution.Traditional pipelines identify accessible regions first, then infer TF activity, limiting comprehensive understanding of regulatory programs driving cellular identity. This study develops a reverse TF-centric machine learning framework to classify peripheral blood mononuclear cells (PBMCs) using integrated chromatin accessibility and gene expression profiles. Our approach addresses data quality challenges through optimized preprocessing, implements class balancing via SMOTE, and employs ensemble ML methods for robust classification. The resulting computational pipeline enhances single-cell analysis capabilities and provides a systematic approach for discovering TF regulatory networks in immune cell populations.
 
-The current version includes analysis of:
+----
 
-* 5 cell types, namely:
-
-   ★ B-cells
-   ★ T-cells
-   ★ Monocytes
-   ★ NK-cells
-   ★ Neutrophils 
-
-This has application in cancer, autoimmune disorders, and developmental conditions since these are not caused by a single broken gene, but by a dysregulation of gene networks.
-   
+ 
 ### 2.Presentation Video
 
 <p align="center">
@@ -82,6 +73,20 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 ###  Demonstration Data  
 - Public dataset: [PBMC from a Healthy Donor (10k, 10x Genomics)](https://www.10xgenomics.com/welcome?closeUrl=%2Fdatasets&lastTouchOfferName=PBMC%20from%20a%20Healthy%20Donor%20-%20No%20Cell%20Sorting%20%2810k%29&lastTouchOfferType=Dataset&product=chromium&redirectUrl=%2Fdatasets%2Fpbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0)  
 
+## The main analysis includes the following cell types:
+
+**Cell types retained** (≥10 samples):
+* B cells (n=134)
+* Monocytes (n=623)
+* NK cells (n=82)
+* T cells (n=616)
+
+**Excluded rare cell types** (<10 samples):
+* HSC-G-CSF (n=3)
+* Pre-B cells CD34- (n=5)
+
+**Final dataset after filtering:** about ≈ 1,400 cells across 4 cell types
+  
 ---
 
 ###  Computational Framework  
