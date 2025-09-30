@@ -50,17 +50,14 @@ This has application in cancer, autoimmune disorders, and developmental conditio
 </p>
 
 
-## Code availability
+## Code Availability  
 
-scATAC-tf has two main steps as listed below.
+The **scATAC-tf** project consists of two main steps:  
 
-1. Pre-processing workflow
-
-Guide :  [Click Here](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)     
-
-2. Processing workflow
-
-Guide :  [Click Here](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)      
+1. **Detailed Workflow**  
+   A step-by-step guide to run Sc-ATAC-tf pipeline with is available here:  
+   👉 [View the Guide](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)  
+    
 
 #### Demonstration Data
 
@@ -71,8 +68,6 @@ This guide will help you to organize your data correctly and could be used to te
 #### Computational Framework
 
 Programming Languages: Python (PyTorch, scikit-learn, pandas), R (Seurat, Signac) 
--![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
--![R](https://img.shields.io/badge/R-4.0%2B-lightgrey.svg)
 
 #### Pre-processing computational resources: 
 
