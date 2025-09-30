@@ -15,7 +15,7 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 2. [Presentation Video](#2presentation-video)
 3. [Workflow](#3workflow)
 4. [Code Availability](#4code-avilability)
-6. [License](#scatactf/LICENSE)
+6. [License](#6LICENSE)
 7. [Contributors](#Contributors)
 <br>
 
