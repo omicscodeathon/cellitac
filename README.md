@@ -1,9 +1,9 @@
-# scATAC-tf: 
+ # scATAC-tf: 
 
 A reverse TF-centric machine learning framework that classifies peripheral blood mono-nuclear cells (PBMCs) using integrated chromatin accessibility and gene expression data.
 
 
-[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 <p align="center">
@@ -81,7 +81,8 @@ The code of the two steps are open source.
 <br>
 
 ## License
-**License :** Artistic license 2.0
+**License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 
 ## Reporting Issues
