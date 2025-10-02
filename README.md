@@ -7,7 +7,7 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 
 
 <p align="center">
-  <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ChatGPT%20Image%20Sep%2029%2C%202025%2C%2003_39_52%20PM.png" alt="scATAC-tf logo" width="300"  />
+  <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/logo.png" alt="scATAC-tf logo" width="300"  />
 </p>
 
 ## Table of Contents
