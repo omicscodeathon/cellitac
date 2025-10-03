@@ -116,47 +116,25 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 - **Class Separation PCA**  
   ![Class Separation PCA](output/output_First_Framework_scATAC_tf/class_separation_pca.png)
 
-- **Model performance results :**
-<p align="center">
+- **Frameworks performance analysis :**
+# scATAC-tf: Model Performance Comparison Across Analytical Frameworks
 
-| Model          | Accuracy   | Precision  | Recall     | F1 Score   | AUC        |
-|----------------|------------|------------|------------|------------|------------|
-| Random Forest  | 0.9725     | 0.9718     | 0.9725     | 0.9721     | 0.9983     |
-| XGBoost        | 0.9828     | 0.9827     | 0.9828     | 0.9825     | 0.9992     |
-| SVM            | 0.9794     | 0.9800     | 0.9794     | 0.9780     | 0.9977     |
+This table summarizes the performance of the top-performing machine learning models across the three implemented analytical frameworks used in the **scATAC-tf** study.
 
-</p>
+| Framework | Best Model(s) | Accuracy (%) | Key Strengths | Key Weaknesses |
+| :--- | :--- | :--- | :--- | :--- |
+| **scATAC-tf** <br> *(4 cell types, balanced)* |  **XGBoost** | **98.28** | • Highest overall accuracy<br>• Excellent feature discrimination<br>• Strong biological marker identification | • Requires SMOTE balancing (artificial data)<br>• Computationally intensive |
+| **CF\_scATAC-tf5** <br> *(4 cell types, rare-cells filtration)* |  **Logistic Regression** | **97.49** | • Robust to natural class imbalance<br>• Fast training<br>• "Good Fit" status | • Slightly lower accuracy than scATAC-tf<br>• Linear assumptions may miss complex patterns |
+| **scATAC-tf5** <br> *(6 cell types, six cell-types)* | **Neural Network** <br>  **Logistic Regression** | **96.80**<br>**96.60** | • Successfully classifies rare populations<br>• Maintains "Good Fit" despite extreme imbalance | • Lower F-scores for rare populations<br>• High statistical uncertainty for rare cells<br>• Careful interpretation of rare cell results |
 
----
+***
+## Key Takeaways
 
-### Second Framework results  
-
-- **Learning Curves**  
-  ![Learning Curves](output/output_Second_Framework_after_dropping/Plots/learning_curves.png)
-
-- **TF Activity Dotplot**  
-  ![TF Activity Dotplot](output/output_Second_Framework_after_dropping/Plots/tf_activity_dotplot.png)
-
-  - **Top TFs per Cell Type**  
-  ![Top TFs per Cell Type](output/output_Second_Framework_after_dropping/Plots/top_tfs_per_celltype.png)
-
----
-
-
-### Third Framework Visualizations  
-
-- **Learning Curves**  
-  ![Learning Curves](output/output_Third_Framework_without_dropping/Plots/learning_curves.png)
-
-  - **TF Activity Dotplot**  
-  ![TF Activity Dotplot](output/output_Third_Framework_without_dropping/Plots/tf_activity_dotplot.png)
-
-- **Top TFs per Cell Type**  
-  ![Top TFs per Cell Type](output/output_Third_Framework_without_dropping/Plots/top_tfs_per_celltype.png)
-
-
-
----
+* **XGBoost** provides the highest classification accuracy when dealing with balanced data (Framework 1).
+* **Logistic Regression** demonstrates superior robustness and generalization ("Good Fit") when the focus is on natural, unfiltered class distributions (Framework 2 & 3).
+* The models maintained high performance, successfully classifying up to **6 cell types**, even those with rare samples (Framework 3).
+- 
+----
 
 ###  Computational Framework  
 
