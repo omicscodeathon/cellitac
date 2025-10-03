@@ -80,7 +80,7 @@ graph LR
 
 All scripts for the **scATAC-tf** project (Python & R) are available in the repository:
 
-👉 Browse the scripts: [scripts/](scripts/)
+👉 Browse the scripts: [Scripts Running](scripts/)
 
 ---
 
