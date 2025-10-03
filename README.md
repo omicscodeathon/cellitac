@@ -119,6 +119,7 @@ This table summarizes the performance of the top-performing machine learning mod
 </p>  
 <p align="center">
 ***
+----
 ## Key Takeaways
 
 * **XGBoost** provides the highest classification accuracy when dealing with balanced data (Framework 1).
