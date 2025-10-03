@@ -114,7 +114,10 @@ This table summarizes the performance of the top-performing machine learning mod
 | **scATAC-tf** <br> *(4 cell types, balanced)* |  **XGBoost** | **98.28** | • Highest overall accuracy<br>• Excellent feature discrimination<br>• Strong biological marker identification | • Requires SMOTE balancing (artificial data)<br>• Computationally intensive |
 | **CF\_scATAC-tf5** <br> *(4 cell types, rare-cells filtration)* |  **Logistic Regression** | **97.49** | • Robust to natural class imbalance<br>• Fast training<br>• "Good Fit" status | • Slightly lower accuracy than scATAC-tf<br>• Linear assumptions may miss complex patterns |
 | **scATAC-tf5** <br> *(6 cell types, six cell-types)* | **Neural Network** <br>  **Logistic Regression** | **96.80**<br>**96.60** | • Successfully classifies rare populations<br>• Maintains "Good Fit" despite extreme imbalance | • Lower F-scores for rare populations<br>• High statistical uncertainty for rare cells<br>• Careful interpretation of rare cell results |
-
+<p align="center">
+    <img src="https://github.com/omicscodeathon/scatactf/blob/main/output/output_Second_Framework_after_dropping/Plots/tf_celltype_network.png" alt="scATAC-tf" width="700" />
+</p>  
+<p align="center">
 ***
 ## Key Takeaways
 
