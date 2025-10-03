@@ -120,12 +120,14 @@ This table summarizes the performance of the top-performing machine learning mod
 <p align="center">
 ***
 ----
+
+ 
 ## Key Takeaways
 
 * **XGBoost** provides the highest classification accuracy when dealing with balanced data (Framework 1).
 * **Logistic Regression** demonstrates superior robustness and generalization ("Good Fit") when the focus is on natural, unfiltered class distributions (Framework 2 & 3).
 * The models maintained high performance, successfully classifying up to **6 cell types**, even those with rare samples (Framework 3).
-- 
+
 ----
 
 ###  Computational Framework  
