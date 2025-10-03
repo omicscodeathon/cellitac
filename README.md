@@ -118,7 +118,7 @@ This table summarizes the performance of the top-performing machine learning mod
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/output/output_Second_Framework_after_dropping/Plots/tf_celltype_network.png" alt="scATAC-tf" width="700" />
 </p>  
 <p align="center">
-***
+
 ----
 
  
