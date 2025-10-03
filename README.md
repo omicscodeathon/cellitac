@@ -195,7 +195,7 @@ You can offer to help with the further development of this project by making pul
 ---
 ### Acknowledgments  
 
-We thank the NIH Office of Data Science Strategy for their support before and during the April 2025 Omics Codeathon, co-organized with the African Society for Bioinformatics and Computational Biology (ASBCB).  
+We thank the NIH Office of Data Science Strategy for their support before and during the October 2025 Omics Codeathon, co-organized with the African Society for Bioinformatics and Computational Biology (ASBCB).  
 We also thank Dr. Awe for his ongoing guidance and all collaborators who contributed to this project.  
 
 ---
