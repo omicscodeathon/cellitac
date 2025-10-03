@@ -188,6 +188,8 @@ You can offer to help with the further development of this project by making pul
 📧 ****Syrus Semawule**  :** semawulesyrus@gmail.com  
 📧 ****Emmanuel Aroma**  :** emmatitusaroma@gmail.com  
 📧 ****Toheeb Jumah**  :** jumahtoheeb@gmail.com  
+📧 ****Olaitan I. Awe, Ph.D.**  :** laitanawe@gmail.com  
+
 
 
 ---
