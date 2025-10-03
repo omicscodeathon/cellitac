@@ -104,19 +104,7 @@ All scripts for the **scATAC-tf** project (Python & R) are available in the repo
 **Final dataset after filtering:** about ≈ 1,400 cells across 4 cell types
   
 ---
-### Main Framework results  :
 
-
-- **Basic TF Network**  
-  ![Basic TF Network](output/output_First_Framework_scATAC_tf/basic_tf_network.png)
-
-- **Feature Importance**  
-  ![Feature Importance](output/output_First_Framework_scATAC_tf/feature_importance.png)
-
-- **Class Separation PCA**  
-  ![Class Separation PCA](output/output_First_Framework_scATAC_tf/class_separation_pca.png)
-
-- **Frameworks performance analysis :**
 # scATAC-tf: Model Performance Comparison Across Analytical Frameworks
 
 This table summarizes the performance of the top-performing machine learning models across the three implemented analytical frameworks used in the **scATAC-tf** study.
