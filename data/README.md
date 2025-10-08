@@ -26,7 +26,7 @@ Download the 10X Multiome dataset:
 https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0
 # ... (download the required files)
 ```
-Also here, you will find additional datasets (`Study1`, `Study2`, `Study3`)  
+Also here, you will find additional dataset (`Study2`)  
 that can be used for testing or further analysis.
 
 ---
