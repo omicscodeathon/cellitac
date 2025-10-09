@@ -1,4 +1,4 @@
- # scATAC-tf: 
+ # scATACtf: 
 
 A reverse TF-centric machine learning framework that classifies peripheral blood mono-nuclear cells (PBMCs) using integrated chromatin accessibility and gene expression data.
 
