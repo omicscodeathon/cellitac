@@ -59,9 +59,12 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
   
 
 ### *Detailed Workflow*
-   👉 [View the Step-by-Step Guide](https://docs.google.com/document/d/1aMClB_2MYsDtn84GWPxdCoQrOLqcOc9K/edit?usp=sharing&ouid=102031592578536141449&rtpof=true&sd=true)  
-   A complete walkthrough for running the scATAC-tf pipeline.  
 
+To get started with the scATACtf pipeline, please refer to our step-by-step workflow guide:
+
+**👉 [Pipeline Workflow Guide](https://github.com/omicscodeathon/scatactf/blob/main/workflow/pipeline.md)**
+
+This guide will walk you through the complete analysis from data acquisition to visualization.
 
 ---
 
