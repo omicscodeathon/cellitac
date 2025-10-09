@@ -1,4 +1,5 @@
 # scATACtf Setup Guide
+## this is th first step before running both R or Python Scripts..
 
 ## System Requirements
 
