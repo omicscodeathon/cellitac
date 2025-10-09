@@ -1,0 +1,24 @@
+# scATACtf Python Dependencies
+# Python version: 3.10.17
+
+# Core Data Processing
+pandas==2.2.3
+numpy==2.1.2
+openpyxl==3.1.5
+
+# Machine Learning
+scikit-learn==1.6.1
+xgboost==3.0.5
+imbalanced-learn==0.14.0
+joblib==1.4.2
+
+# Visualization
+matplotlib==3.10.1
+seaborn==0.13.2
+plotly==6.3.0
+
+# Network Analysis
+networkx==3.3
+
+# Development Environment
+jupyter==1.1.1
