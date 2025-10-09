@@ -146,8 +146,8 @@ This table summarizes the performance of the top-performing machine learning mod
 
 | Step | Recommended Resources |
 |------|------------------------|
-| **Pre-processing** | 3.6 GHz 10-Core Intel Core i9, 64 GB RAM, 10 GB storage |
-| **Modeling & Scripts**     | Open-source code available (optimized for scalability) |
+| **Pre-processing** |I-MAC: 3.6 GHz 10-Core Intel Core i9, 64 GB RAM, 10 GB storage |
+| **Modeling & Scripts**     | NVIDIA A100-SXM4-80GB GPU (CUDA 12.2, Driver 535.247.01) |
 
 
 ----
