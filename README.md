@@ -29,14 +29,14 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 ----
 
 
-### 1.Background
+### 1. Background
 
 Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide profiling of regulatory elements at single-cell resolution.Traditional pipelines identify accessible regions first, then infer TF activity, limiting comprehensive understanding of regulatory programs driving cellular identity. This study develops a reverse TF-centric machine learning framework to classify peripheral blood mononuclear cells (PBMCs) using integrated chromatin accessibility and gene expression profiles. Our approach addresses data quality challenges through optimized preprocessing, implements class balancing via SMOTE, and employs ensemble ML methods for robust classification. The resulting computational pipeline enhances single-cell analysis capabilities and provides a systematic approach for discovering TF regulatory networks in immune cell populations.
 
 ----
 
  
-### 2.Presentation Video
+### 2. Presentation Video
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing">
@@ -46,7 +46,7 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 
 
 
-### 3.Workflow  
+### 3. Workflow  
 
 <p align="center">
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCB_NEWlogo metho.jpg" alt="scATAC-tf" width="700" />
@@ -79,9 +79,9 @@ graph LR
 ```
 ## 
 
-### 4.Code Avilability:
+### 4. Code Avilability:
 
-All scripts for the **scATAC-tf** project (Python & R) are available in the repository:
+All scripts for the **scATACtf** project (Python & R) are available in the repository:
 
 👉 Browse the scripts: [Scripts Running](scripts/)
 
@@ -114,7 +114,7 @@ This table summarizes the performance of the top-performing machine learning mod
 
 | Framework | Best Model(s) | Accuracy (%) | Key Strengths | Key Weaknesses |
 | :--- | :--- | :--- | :--- | :--- |
-| **scATAC-tf** <br> *(4 cell types, balanced)* |  **XGBoost** | **98.28** | • Highest overall accuracy<br>• Excellent feature discrimination<br>• Strong biological marker identification | • Requires SMOTE balancing (artificial data)<br>• Computationally intensive |
+| **scATACtf** <br> *(4 cell types, balanced)* |  **XGBoost** | **98.28** | • Highest overall accuracy<br>• Excellent feature discrimination<br>• Strong biological marker identification | • Requires SMOTE balancing (artificial data)<br>• Computationally intensive |
 | **CF\_scATAC-tf5** <br> *(4 cell types, rare-cells filtration)* |  **Logistic Regression** | **97.49** | • Robust to natural class imbalance<br>• Fast training<br>• "Good Fit" status | • Slightly lower accuracy than scATAC-tf<br>• Linear assumptions may miss complex patterns |
 | **scATAC-tf5** <br> *(6 cell types, six cell-types)* | **Neural Network** <br>  **Logistic Regression** | **96.80**<br>**96.60** | • Successfully classifies rare populations<br>• Maintains "Good Fit" despite extreme imbalance | • Lower F-scores for rare populations<br>• High statistical uncertainty for rare cells<br>• Careful interpretation of rare cell results |
 <p align="center">
@@ -154,7 +154,7 @@ This table summarizes the performance of the top-performing machine learning mod
 
 <br>
 
-### 5.Reproducibility
+### 5. Reproducibility
 
 #### Random Seeds
 All scripts use fixed random seed (42) for reproducibility 
@@ -164,7 +164,7 @@ All scripts use fixed random seed (42) for reproducibility
 
 ----
 
-### 6.License
+### 6. License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
