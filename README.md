@@ -160,7 +160,7 @@ This table summarizes the performance of the top-performing machine learning mod
 All scripts use fixed random seed (42) for reproducibility 
 
 #### Packagies & dependencies :
-[all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/scatactf/blob/main/scripts/scATACtf_Setup_Guide.docx)  
+[all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/scatactf/blob/main/scripts/READme.md)  
 
 ----
 
