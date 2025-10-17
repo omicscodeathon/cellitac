@@ -36,12 +36,11 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 ----
 
  
-### 2. Presentation Video
+### 2. Overview of the mechanisms influencing chromatin accessibility
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing">
+    <!-- <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing"> -->
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCB-front_image.png" alt="scATAC-tf" width="700" />
-  </a>
 </p>
 
 
