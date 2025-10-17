@@ -16,7 +16,11 @@ This section contains the following files and folders:
   Results from the second framework experiment (after applying feature/cell dropping).  
 
 - **output_Third_Framework_without_dropping/**  
-  Results from the third framework experiment (without applying feature/cell dropping).  
+  Results from the third framework experiment (without applying feature/cell dropping).
+
+- **output_scRNA_ML_Pipeline/**  
+  Results from the scRNA-seq data.
+
 
 - **README.md**  
   Documentation and instructions for the repository.  
