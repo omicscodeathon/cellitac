@@ -11,11 +11,11 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 </p>
 
 ## Table of Contents
-1. [Background](#background)
-2. [Overview of the mechanisms influencing chromatin accessibility](#2overview-of-the-mechanisms-influencing-chromatin-accessibility)
-3. [Workflow](#3workflow)
-4. [Code Availability](#4code-avilability)
-5. [Reproducibility](#Reproducibility)
+1. [Background](#1-background)
+2. [Overview of the mechanisms influencing chromatin accessibility](#2-overview-of-the-mechanisms-influencing-chromatin-accessibility)
+3. [Workflow](#3-workflow)
+4. [Code Availability](#4-code-avilability)
+5. [Reproducibility](#5-Reproducibility)
 6. [License](#6-license)
 7. [Contributors](#Contributors)
 
