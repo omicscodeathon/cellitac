@@ -153,7 +153,7 @@ This table summarizes the performance of the top-performing machine learning mod
 
 <br>
 
-## 5. Reproducibility
+## Reproducibility
 
 #### Random Seeds
 All scripts use fixed random seed (42) for reproducibility 
@@ -163,7 +163,7 @@ All scripts use fixed random seed (42) for reproducibility
 
 ----
 
-## 6. License
+## License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -175,7 +175,7 @@ To report an issue please use the issues page (https://github.com/omicscodeathon
 ## Contribute to Project
 You can offer to help with the further development of this project by making pull requests on this repo. To do so, fork this repository and make the proposed changes. Once completed and tested, submit a pull request to this repo.
 
-##  Contributors  
+## Contributors  
 
 |   Name   | Affiliation | Role |
 |----------|-------------|------|
