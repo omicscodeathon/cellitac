@@ -15,8 +15,8 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 2. [Overview of the mechanisms influencing chromatin accessibility](#2overview-of-the-mechanisms-influencing-chromatin-accessibility)
 3. [Workflow](#3workflow)
 4. [Code Availability](#4code-avilability)
-5. [Reproducibility](#5Reproducibility)
-6. [License](#6license)
+5. [Reproducibility](#Reproducibility)
+6. [License](#6-license)
 7. [Contributors](#Contributors)
 
 ----
@@ -153,7 +153,7 @@ This table summarizes the performance of the top-performing machine learning mod
 
 <br>
 
-## Reproducibility
+### Reproducibility
 
 #### Random Seeds
 All scripts use fixed random seed (42) for reproducibility 
@@ -163,7 +163,7 @@ All scripts use fixed random seed (42) for reproducibility
 
 ----
 
-## License
+### 6. License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
