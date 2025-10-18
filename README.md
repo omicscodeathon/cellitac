@@ -15,9 +15,9 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 2. [Overview of the mechanisms influencing chromatin accessibility](#2-overview-of-the-mechanisms-influencing-chromatin-accessibility)
 3. [Workflow](#3-workflow)
 4. [Code Availability](#4-code-avilability)
-5. [Reproducibility](#5-Reproducibility)
+5. [Reproducibility](#5-reproducibility)
 6. [License](#6-license)
-7. [Contributors](#Contributors)
+7. [Contributors](#7-Contributors)
 
 ----
 <br>
@@ -153,7 +153,7 @@ This table summarizes the performance of the top-performing machine learning mod
 
 <br>
 
-### Reproducibility
+### 5. Reproducibility
 
 #### Random Seeds
 All scripts use fixed random seed (42) for reproducibility 
@@ -175,7 +175,7 @@ To report an issue please use the issues page (https://github.com/omicscodeathon
 ## Contribute to Project
 You can offer to help with the further development of this project by making pull requests on this repo. To do so, fork this repository and make the proposed changes. Once completed and tested, submit a pull request to this repo.
 
-## Contributors  
+## 7. Contributors  
 
 |   Name   | Affiliation | Role |
 |----------|-------------|------|
