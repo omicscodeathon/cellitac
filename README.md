@@ -1,4 +1,4 @@
- # scATACtf: 
+ # cellitac: 
 
 A reverse TF-centric machine learning framework that classifies peripheral blood mono-nuclear cells (PBMCs) using integrated chromatin accessibility and gene expression data.
 
@@ -7,7 +7,7 @@ A reverse TF-centric machine learning framework that classifies peripheral blood
 
 
 <p align="center">
-  <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/logo.png" alt="scATAC-tf logo" width="300"  />
+  <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/logo.png" alt="scATAC-tf logo" width="300"  />
 </p>
 
 ## Table of Contents
@@ -40,7 +40,7 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 
 <p align="center">
     <!-- <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing"> -->
-    <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCB-front_image.png" alt="scATAC-tf" width="700" />
+    <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/ASBCB-front_image.png" alt="scATAC-tf" width="700" />
 </p>
 
 
@@ -48,7 +48,7 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 ### 3. Workflow  
 
 <p align="center">
-    <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCB-Methodology_graph.png" alt="scATAC-tf" width="700" />
+    <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/ASBCB-Methodology_graph.png" alt="scATAC-tf" width="700" />
 </p>  
 <p align="center">
     <b>Figure 1.</b> Workflow of the methods employed in this study
@@ -59,9 +59,9 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 
 ### *Detailed Workflow*
 
-To get started with the scATACtf pipeline, please refer to our step-by-step workflow guide:
+To get started with the cellitac pipeline, please refer to our step-by-step workflow guide:
 
-**👉 [Pipeline Workflow Guide](https://github.com/omicscodeathon/scatactf/blob/main/workflow/pipeline.md)**
+**👉 [Pipeline Workflow Guide](https://github.com/omicscodeathon/cellitac/blob/main/workflow/pipeline.md)**
 
 This guide will walk you through the complete analysis from data acquisition to visualization.
 
@@ -80,7 +80,7 @@ graph LR
 
 ### 4. Code Avilability:
 
-All scripts for the **scATACtf** project (Python & R) are available in the repository:
+All scripts for the **cellitac** project (Python & R) are available in the repository:
 
 👉 Browse the scripts: [Scripts Running](scripts/)
 
@@ -113,11 +113,11 @@ This table summarizes the performance of the top-performing machine learning mod
 
 | Framework | Best Model(s) | Accuracy (%) | Key Strengths | Key Weaknesses |
 | :--- | :--- | :--- | :--- | :--- |
-| **scATACtf** <br> *(4 cell types, balanced)* |  **XGBoost** | **98.28** | • Highest overall accuracy<br>• Excellent feature discrimination<br>• Strong biological marker identification | • Requires SMOTE balancing (artificial data)<br>• Computationally intensive |
+| **cellitac** <br> *(4 cell types, balanced)* |  **XGBoost** | **98.28** | • Highest overall accuracy<br>• Excellent feature discrimination<br>• Strong biological marker identification | • Requires SMOTE balancing (artificial data)<br>• Computationally intensive |
 | **CF\_scATAC-tf5** <br> *(4 cell types, rare-cells filtration)* |  **Logistic Regression** | **97.49** | • Robust to natural class imbalance<br>• Fast training<br>• "Good Fit" status | • Slightly lower accuracy than scATAC-tf<br>• Linear assumptions may miss complex patterns |
 | **scATAC-tf5** <br> *(6 cell types, six cell-types)* | **Neural Network** <br>  **Logistic Regression** | **96.80**<br>**96.60** | • Successfully classifies rare populations<br>• Maintains "Good Fit" despite extreme imbalance | • Lower F-scores for rare populations<br>• High statistical uncertainty for rare cells<br>• Careful interpretation of rare cell results |
 <p align="center">
-    <img src="https://github.com/omicscodeathon/scatactf/blob/main/output/output_Second_Framework_after_dropping/Plots/tf_celltype_network.png" alt="scATAC-tf" width="700" />
+    <img src="https://github.com/omicscodeathon/cellitac/blob/main/output/output_Second_Framework_after_dropping/Plots/tf_celltype_network.png" alt="scATAC-tf" width="700" />
 </p>  
 <p align="center">
 
@@ -159,7 +159,7 @@ This table summarizes the performance of the top-performing machine learning mod
 All scripts use fixed random seed (42) for reproducibility 
 
 #### Packagies & dependencies :
-[all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/scatactf/blob/main/scripts/READme.md)  
+[all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/cellitac/blob/main/scripts/READme.md)  
 
 ----
 
@@ -169,7 +169,7 @@ All scripts use fixed random seed (42) for reproducibility
 
 
 ## Reporting Issues
-To report an issue please use the issues page (https://github.com/omicscodeathon/scatactf/issues). Please check existing issues before submitting a new one.
+To report an issue please use the issues page (https://github.com/omicscodeathon/cellitac/issues). Please check existing issues before submitting a new one.
 
 
 ## Contribute to Project
