@@ -1,4 +1,4 @@
- # cellitac: 
+ # cellitac: CELL type Identification using Transcription factor Analysis and Chromatin accessibility
 
 A reverse TF-centric machine learning framework that classifies peripheral blood mono-nuclear cells (PBMCs) using integrated chromatin accessibility and gene expression data.
 
