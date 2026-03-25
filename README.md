@@ -12,12 +12,13 @@
 
 ## Table of Contents
 1. [Background](#1-background)
-2. [Overview of the mechanisms influencing chromatin accessibility](#2-overview-of-the-mechanisms-influencing-chromatin-accessibility)
-3. [Workflow](#3-workflow)
-4. [Code Availability](#4-code-avilability)
-5. [Reproducibility](#5-reproducibility)
-6. [License](#6-license)
-7. [Contributors](#7-Contributors)
+2. [Installation](#2-installation)
+3. [Overview of the mechanisms influencing chromatin accessibility](#2-overview-of-the-mechanisms-influencing-chromatin-accessibility)
+4. [Workflow](#3-workflow)
+5. [Code Availability](#4-code-avilability)
+6. [Reproducibility](#5-reproducibility)
+7. [License](#6-license)
+8. [Contributors](#7-Contributors)
 
 ----
 <br>
