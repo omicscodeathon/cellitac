@@ -35,8 +35,30 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 
 ----
 
- 
-### 2. Overview of the mechanisms influencing chromatin accessibility
+## 2. Installation
+
+The **cellitac** pipeline is designed for easy and direct use through official package managers, ensuring a reproducible environment for single-cell analysis.
+
+### Official Packages
+* **PyPI (Python):** [cellitac on PyPI](https://pypi.org/project/cellitac)
+* **BioConda:** [cellitac on Bioconda](https://anaconda.org/channels/bioconda/packages/cellitac/overview)
+
+---
+
+### Setup Instructions
+
+#### Using pip (Python)
+To install the latest stable version of **cellitac** via pip:
+```bash
+pip install cellitac
+```
+#### Using conda (Bioconda)
+```bash
+conda install -c bioconda cellitac
+```
+
+
+### 3. Overview of the mechanisms influencing chromatin accessibility
 
 <p align="center">
     <!-- <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing"> -->
@@ -45,7 +67,7 @@ Single-cell chromatin accessibility sequencing (scATAC-seq) enables genome-wide 
 
 
 
-### 3. Workflow  
+### 4. Workflow  
 
 <p align="center">
     <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/ASBCB-Methodology_graph.png" alt="cellitac" width="700" />
@@ -78,7 +100,7 @@ graph LR
 ```
 ## 
 
-### 4. Code Avilability:
+### 5. Code Avilability:
 
 All scripts for the **cellitac** project (Python & R) are available in the repository:
 
@@ -153,7 +175,7 @@ This table summarizes the performance of the top-performing machine learning mod
 
 <br>
 
-### 5. Reproducibility
+### 6. Reproducibility
 
 #### Random Seeds
 All scripts use fixed random seed (42) for reproducibility 
@@ -163,7 +185,7 @@ All scripts use fixed random seed (42) for reproducibility
 
 ----
 
-### 6. License
+### 7. License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -175,7 +197,7 @@ To report an issue please use the issues page (https://github.com/omicscodeathon
 ## Contribute to Project
 You can offer to help with the further development of this project by making pull requests on this repo. To do so, fork this repository and make the proposed changes. Once completed and tested, submit a pull request to this repo.
 
-## 7. Contributors  
+### 8. Contributors  
 
 |   Name   | Affiliation | Role |
 |----------|-------------|------|
