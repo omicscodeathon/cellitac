@@ -1,0 +1,157 @@
+{
+  "Dataset_Info": {
+    "Total_Samples": 2089,
+    "Total_Features_Original": 6846,
+    "Total_Features_Final": 1000,
+    "Cell_Types": 13,
+    "Class_Names": [
+      "Astrocyte",
+      "Chondrocytes",
+      "Embryonic_stem_cells",
+      "Endothelial_cells",
+      "Epithelial_cells",
+      "Fibroblasts",
+      "Hepatocytes",
+      "Macrophage",
+      "Monocyte",
+      "Neuroepithelial_cell",
+      "Neurons",
+      "Osteoblasts",
+      "Smooth_muscle_cells"
+    ]
+  },
+  "Class_Distribution": [
+    {
+      "Cell_Type": "Hepatocytes",
+      "Count": 761,
+      "Proportion": 0.3642891335567257,
+      "Imbalance_Ratio": 1.0
+    },
+    {
+      "Cell_Type": "Smooth_muscle_cells",
+      "Count": 274,
+      "Proportion": 0.13116323599808521,
+      "Imbalance_Ratio": 2.7773722627737225
+    },
+    {
+      "Cell_Type": "Epithelial_cells",
+      "Count": 269,
+      "Proportion": 0.12876974629009094,
+      "Imbalance_Ratio": 2.828996282527881
+    },
+    {
+      "Cell_Type": "Fibroblasts",
+      "Count": 243,
+      "Proportion": 0.11632359980852082,
+      "Imbalance_Ratio": 3.1316872427983538
+    },
+    {
+      "Cell_Type": "Neurons",
+      "Count": 202,
+      "Proportion": 0.09669698420296793,
+      "Imbalance_Ratio": 3.767326732673267
+    },
+    {
+      "Cell_Type": "Astrocyte",
+      "Count": 104,
+      "Proportion": 0.04978458592628052,
+      "Imbalance_Ratio": 7.3173076923076925
+    },
+    {
+      "Cell_Type": "Neuroepithelial_cell",
+      "Count": 91,
+      "Proportion": 0.043561512685495456,
+      "Imbalance_Ratio": 8.362637362637363
+    },
+    {
+      "Cell_Type": "Osteoblasts",
+      "Count": 37,
+      "Proportion": 0.01771182383915749,
+      "Imbalance_Ratio": 20.56756756756757
+    },
+    {
+      "Cell_Type": "Embryonic_stem_cells",
+      "Count": 26,
+      "Proportion": 0.01244614648157013,
+      "Imbalance_Ratio": 29.26923076923077
+    },
+    {
+      "Cell_Type": "Endothelial_cells",
+      "Count": 25,
+      "Proportion": 0.011967448539971278,
+      "Imbalance_Ratio": 30.44
+    },
+    {
+      "Cell_Type": "Macrophage",
+      "Count": 24,
+      "Proportion": 0.011488750598372427,
+      "Imbalance_Ratio": 31.708333333333332
+    },
+    {
+      "Cell_Type": "Chondrocytes",
+      "Count": 21,
+      "Proportion": 0.010052656773575874,
+      "Imbalance_Ratio": 36.23809523809524
+    },
+    {
+      "Cell_Type": "Monocyte",
+      "Count": 12,
+      "Proportion": 0.0057443752991862135,
+      "Imbalance_Ratio": 63.416666666666664
+    }
+  ],
+  "Balancing_Applied": "True",
+  "Model_Performance": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.3014354066985646,
+      "Precision": 0.2677013239377979,
+      "Recall": 0.3014354066985646,
+      "F1_Score": 0.2658409422294509,
+      "AUC": 0.5772184576156006
+    },
+    {
+      "Model": "XGBoost",
+      "Accuracy": 0.3803827751196172,
+      "Precision": 0.3418055783226062,
+      "Recall": 0.3803827751196172,
+      "F1_Score": 0.3275663317261546,
+      "AUC": 0.6904520965272485
+    },
+    {
+      "Model": "SVM",
+      "Accuracy": 0.37799043062200954,
+      "Precision": 0.3157197518184728,
+      "Recall": 0.37799043062200954,
+      "F1_Score": 0.3100090181721844,
+      "AUC": 0.7006729726077644
+    }
+  ],
+  "Cross_Validation": {
+    "Train_Accuracy": {
+      "Random Forest": 0.9012,
+      "XGBoost": 1.0,
+      "SVM": 0.9752
+    },
+    "Validation_Accuracy": {
+      "Random Forest": 0.853,
+      "XGBoost": 0.9015,
+      "SVM": 0.919
+    },
+    "Overfitting_Gap": {
+      "Random Forest": 0.0482,
+      "XGBoost": 0.0985,
+      "SVM": 0.0562
+    },
+    "Train_Std": {
+      "Random Forest": 0.0024,
+      "XGBoost": 0.0,
+      "SVM": 0.0008
+    },
+    "Val_Std": {
+      "Random Forest": 0.0054,
+      "XGBoost": 0.0029,
+      "SVM": 0.0022
+    }
+  }
+}
