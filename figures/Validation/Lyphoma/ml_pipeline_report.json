@@ -1,0 +1,101 @@
+{
+  "Dataset_Info": {
+    "Total_Samples": 950,
+    "Total_Features_Original": 6666,
+    "Total_Features_Final": 1000,
+    "Cell_Types": 5,
+    "Class_Names": [
+      "B_cell",
+      "Macrophage",
+      "Monocyte",
+      "NK_cell",
+      "T_cells"
+    ]
+  },
+  "Class_Distribution": [
+    {
+      "Cell_Type": "T_cells",
+      "Count": 774,
+      "Proportion": 0.8147368421052632,
+      "Imbalance_Ratio": 1.0
+    },
+    {
+      "Cell_Type": "B_cell",
+      "Count": 82,
+      "Proportion": 0.0863157894736842,
+      "Imbalance_Ratio": 9.439024390243903
+    },
+    {
+      "Cell_Type": "NK_cell",
+      "Count": 58,
+      "Proportion": 0.061052631578947365,
+      "Imbalance_Ratio": 13.344827586206897
+    },
+    {
+      "Cell_Type": "Monocyte",
+      "Count": 21,
+      "Proportion": 0.022105263157894735,
+      "Imbalance_Ratio": 36.857142857142854
+    },
+    {
+      "Cell_Type": "Macrophage",
+      "Count": 15,
+      "Proportion": 0.015789473684210527,
+      "Imbalance_Ratio": 51.6
+    }
+  ],
+  "Balancing_Applied": "True",
+  "Model_Performance": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.9263157894736842,
+      "Precision": 0.9230994152046783,
+      "Recall": 0.9263157894736842,
+      "F1_Score": 0.9120427251093032,
+      "AUC": 0.9531682247700966
+    },
+    {
+      "Model": "XGBoost",
+      "Accuracy": 0.9368421052631579,
+      "Precision": 0.934706459242736,
+      "Recall": 0.9368421052631579,
+      "F1_Score": 0.9281647252000349,
+      "AUC": 0.9621661797346217
+    },
+    {
+      "Model": "SVM",
+      "Accuracy": 0.8894736842105263,
+      "Precision": 0.8780399274047186,
+      "Recall": 0.8894736842105263,
+      "F1_Score": 0.8739181286549708,
+      "AUC": 0.9451415434599527
+    }
+  ],
+  "Cross_Validation": {
+    "Train_Accuracy": {
+      "Random Forest": 0.9856,
+      "XGBoost": 1.0,
+      "SVM": 0.9989
+    },
+    "Validation_Accuracy": {
+      "Random Forest": 0.9796,
+      "XGBoost": 0.9874,
+      "SVM": 0.9893
+    },
+    "Overfitting_Gap": {
+      "Random Forest": 0.006,
+      "XGBoost": 0.0126,
+      "SVM": 0.0095
+    },
+    "Train_Std": {
+      "Random Forest": 0.0015,
+      "XGBoost": 0.0,
+      "SVM": 0.0003
+    },
+    "Val_Std": {
+      "Random Forest": 0.003,
+      "XGBoost": 0.0033,
+      "SVM": 0.0042
+    }
+  }
+}
