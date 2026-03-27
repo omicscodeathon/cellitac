@@ -1,4 +1,4 @@
-# Complete scATAC-tf Analysis Pipeline
+# Complete cellitac Analysis Pipeline
 ## From Data Acquisition to Advanced Visualization
 
 ---
@@ -59,11 +59,11 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 **Script:** Team 1 RNA processing pipeline  
 **Packages Used:**
-- Seurat v5.3.0
+- Seurat
 - hdf5r
 - dplyr
 - ggplot2
-- SingleR v2.0.0
+- SingleR
 - celldex
 
 #### Key Parameters:
@@ -110,7 +110,7 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 **Script:** Team 2 ATAC processing pipeline  
 **Packages Used:**
-- Signac v1.15.0
+- Signac
 - GenomicRanges
 - EnsDb.Hsapiens.v75
 - biovizBase
@@ -149,7 +149,6 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 ### Step 4: Multi-Modal Data Integration
 
-**Script:** ASBCS_step2_Syrus.r  
 **Packages Used:** Base R, data manipulation functions
 
 #### Key Parameters:
@@ -184,14 +183,13 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 ### Step 5: Environment Setup and Data Loading
 
-**Script:** Preliminary_result_v2.py  
 **Packages Used:**
-- pandas v2.2.3
-- numpy v2.1.2
-- scikit-learn v1.6.1
-- matplotlib v3.10.1
+- pandas v2.3.3
+- numpy v2.4.2
+- scikit-learn v1.8.0
+- matplotlib v3.9.1
 - seaborn v0.13.2
-- imblearn (imbalanced-learn v0.14.0)
+- imbalanced-learn v0.14.1
 
 #### Processing Steps:
 1. Load multi-modal feature matrix
@@ -206,7 +204,7 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 ### Step 6: Class Imbalance Analysis and Handling
 
-**Packages Used:** imblearn, matplotlib, seaborn
+**Packages Used:** imbalanced-learn, matplotlib, seaborn
 
 #### Key Parameters:
 - **Imbalance threshold:** 2.0 (max/min class ratio)
@@ -261,7 +259,7 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 ### Step 8: Model Training and Evaluation
 
-**Packages Used:** scikit-learn ensemble, linear_model, svm, neural_network, xgboost
+**Packages Used:** scikit-learn, xgboost v3.2.0
 
 #### Key Parameters:
 
@@ -423,7 +421,7 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 #### C. Network Analysis Visualization
 
-**Packages Used:** networkx, matplotlib
+**Packages Used:** networkx v3.6.1, matplotlib
 
 **Key Parameters:**
 - Feature correlation threshold: 0.5
@@ -482,7 +480,7 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 ### Step 13: Results Export and Documentation
 
-**Packages Used:** json, pandas, openpyxl
+**Packages Used:** json, pandas, openpyxl v3.1.5
 
 #### Export Components:
 
@@ -539,39 +537,40 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 
 ---
 
-# Software Requirements 
-##( you can check this READme.md file  --> for more details on how to setup your environment https://github.com/omicscodeathon/scatactf/blob/main/scripts/READme.md )
+## Software Requirements
 
-### R Environment (v4.5.1)
-- Seurat v5.3.0
-- Signac v1.15.0
+> For full installation instructions, see the [README](https://github.com/omicscodeathon/cellitac/blob/main/README.md)
+
+### R Environment (v4.4.3)
+- Seurat
+- Signac
 - GenomicRanges
 - EnsDb.Hsapiens.v75
-- SingleR v2.0.0
+- SingleR
 - celldex
 - hdf5r
+- Matrix
 - dplyr
 - ggplot2
 - biovizBase
 
-### Python Environment (v3.10.17)
-- pandas v2.2.3
-- numpy v2.1.2
-- scikit-learn v1.6.1
-- xgboost v3.0.5
-- imbalanced-learn v0.14.0
-- matplotlib v3.10.1
+### Python Environment (v3.11.13)
+- pandas v2.3.3
+- numpy v2.4.2
+- scikit-learn v1.8.0
+- xgboost v3.2.0
+- imbalanced-learn v0.14.1
+- matplotlib v3.9.1
 - seaborn v0.13.2
-- plotly v6.3.0
-- networkx v3.3
+- plotly v6.5.2
+- networkx v3.6.1
 - openpyxl v3.1.5
-- joblib v1.4.2
-- jupyter v1.1.1
+- rpy2 v3.5.11
 
 ---
 
 ## Contact
 
-If you have any questions, you can contact team members .
+If you have any questions, please open an issue on the [GitHub repository](https://github.com/omicscodeathon/cellitac).
 
 ---
