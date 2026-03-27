@@ -91,12 +91,3 @@ cellitac-model --help
 ```
 
 ---
-
-## Contributors
-
-- Rana H. Abu-Zeid
-- Dr.Olaitan Awe
-- Syrus Semawule
-- Emmanuel Aroma
-- Toheeb Jumah
-- Dr.Derek Reiman
