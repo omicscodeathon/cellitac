@@ -65,6 +65,20 @@ BiocManager::install("EnsDb.Hsapiens.v75")
 | openpyxl | 3.1.5 |
 | rpy2 | 3.5.11 |
 
+For manual installation:
+
+```bash
+pip install -r Python_requirements.txt
+```
+
+Or install individually:
+
+```bash
+pip install pandas==2.3.3 numpy==2.4.2 scikit-learn==1.8.0 xgboost==3.2.0 \
+    imbalanced-learn==0.14.1 matplotlib==3.9.1 seaborn==0.13.2 plotly==6.5.2 \
+    networkx==3.6.1 openpyxl==3.1.5 rpy2==3.5.11
+```
+
 ---
 
 ## R Dependencies
@@ -79,6 +93,12 @@ BiocManager::install("EnsDb.Hsapiens.v75")
 | EnsDb.Hsapiens.v75 | Bioconductor |
 | hdf5r | CRAN |
 | Matrix | CRAN |
+
+For automated R installation, run `install_R_packages.R` in R or RStudio:
+
+```r
+source("install_R_packages.R")
+```
 
 ---
 
