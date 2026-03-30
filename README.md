@@ -126,10 +126,12 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 This table summarizes the performance of the top-performing machine learning models across the three implemented analytical frameworks used in the **cellitac** study.
 
 | Framework | Best Model(s) | Accuracy (%) | Key Strengths |
-| :--- | :--- | :--- | :--- | :--- |
-| **cellitac** <br> *(4 cell types, balanced)* |  **XGBoost** | **98.28** | • Highest overall accuracy<br>• Excellent feature discrimination<br>• Strong biological marker identification |
-| **CF\_scATAC-tf5** <br> *(4 cell types, rare-cells filtration)* |  **Logistic Regression** | **97.49** | • Robust to natural class imbalance<br>• Fast training<br>• "Good Fit" status |
-| **scATAC-tf5** <br> *(6 cell types, six cell-types)* | **Neural Network** <br>  **Logistic Regression** | **96.80**<br>**96.60** | • Successfully classifies rare populations<br>• Maintains "Good Fit" despite extreme imbalance |
+|-----------|--------------|--------------|---------------|
+| **cellitac** *(4 cell types, balanced)* | **XGBoost** | **98.28** | • Highest overall accuracy <br> • Excellent feature discrimination <br> • Strong biological marker identification |
+| **CF_scATAC-tf5** *(4 cell types, rare-cells filtration)* | **Logistic Regression** | **97.49** | • Robust to natural class imbalance <br> • Fast training <br> • "Good Fit" status |
+| **scATAC-tf5** *(6 cell types, six cell-types)* | **Neural Network** <br> **Logistic Regression** | **96.80** <br> **96.60** | • Successfully classifies rare populations <br> • Maintains "Good Fit" despite extreme imbalance |
+
+
 <p align="center">
     <img src="https://github.com/omicscodeathon/cellitac/blob/main/output/output_Second_Framework_after_dropping/Plots/tf_celltype_network.png" alt="cellitac" width="700" />
 </p>  
