@@ -77,16 +77,7 @@ conda install -c bioconda cellitac
     <b>Figure 1.</b> Workflow of the methods employed in this study
 </p>
 
- 
-  
 
-### *Detailed Workflow*
-
-To get started with the cellitac pipeline, please refer to our step-by-step workflow guide:
-
-**👉 [Pipeline Workflow Guide](https://github.com/omicscodeathon/cellitac/blob/main/workflow/pipeline.md)**
-
-This guide will walk you through the complete analysis from data acquisition to visualization.
 
 ---
 
