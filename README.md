@@ -48,8 +48,8 @@ The **cellitac** pipeline is designed for easy and direct use through official p
 
 ### Setup Instructions
 
-[[video-output-2ACC3F3C-CE19-466D-A8ED-B076203E81FE-1.mp4]]
-<video src="cellitac_demo.mp4" width="100%" controls></video>
+##  Watch this demo for better installation steps
+[![Google Drive](https://img.shields.io/badge/Watch_Video_on-Google_Drive-blue?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/11lzONeuyIwRPBx8pdx2ad_kzxnHyVd1F/view?usp=drivesdk)
 
 #### Using pip (Python)
 To install the latest stable version of **cellitac** via pip:
