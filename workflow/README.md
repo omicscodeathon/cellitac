@@ -12,7 +12,7 @@ The workflow combines **R-based preprocessing** with **Python-based machine lear
 # Workflow  
 
 ##  Watch this demo for better installation steps
-[![Watch the video](https://img.shields.io/badge/YouTube-Video_Demo-red?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/11lzONeuyIwRPBx8pdx2ad_kzxnHyVd1F/view?usp=drivesdk)
+[![Google Drive](https://img.shields.io/badge/Watch_Video_on-Google_Drive-blue?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/11lzONeuyIwRPBx8pdx2ad_kzxnHyVd1F/view?usp=drivesdk)
 
 <p align="center">
     <img src="https://github.com/omicscodeathon/scatactf/blob/main/figures/ASBCB-Methodology_graph.png" alt="scATAC-tf" width="700" />
