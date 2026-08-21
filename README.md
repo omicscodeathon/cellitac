@@ -111,16 +111,15 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 ## The main analysis includes the following cell types: 
 
 **Cell types retained** :
-* B cells 
-* Monocytes 
+* B cells
+* CD4+ T cells
+* CD8+ T cells
+* Dendritic cells
+* Monocytes
 * NK cells
-* T cells 
+* T cells
 
-**Excluded rare cell types** (<10 samples):
-* HSC-G-CSF 
-* Pre-B cells CD34- 
-
-**Final dataset after filtering:** about ≈ 1,400 cells across 4 cell types
+**Final dataset after filtering:** A total of 10,989 cells and 578 TF motifs distributed across 7 cell types.
   
 ---
 
