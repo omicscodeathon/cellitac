@@ -173,9 +173,6 @@ This table summarizes the performance of the top-performing machine learning mod
 
 ### 6. Reproducibility
 
-#### Random Seeds
-All scripts use fixed random seed (42) for reproducibility 
-
 #### Packagies & dependencies :
 [all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/cellitac/blob/main/scripts/READme.md)  
 
