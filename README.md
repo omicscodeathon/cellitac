@@ -74,7 +74,7 @@ conda install -c bioconda cellitac
 ### 4. Workflow  
 
 <p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/ASBCB-Methodology_graph.png" alt="cellitac" width="700" />
+    <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/cellitac_fixed_methodology.drawio.png" alt="cellitac" width="700" />
 </p>  
 <p align="center">
     <b>Figure 1.</b> Workflow of the methods employed in this study
