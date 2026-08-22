@@ -1,113 +1,53 @@
 # cellitac
 
-[![PyPI version](https://badge.fury.io/py/cellitac.svg)](https://pypi.org/project/cellitac/)
-[![Conda Bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg)](https://anaconda.org/channels/bioconda/packages/cellitac/overview)
-
 **Cell type Identification using Transcription factor Analysis and Chromatin accessibility**
 
-cellitac is a machine learning pipeline for classifying cell types from Single-Cell ATAC + RNA Multiome data using transcription factor analysis and chromatin accessibility features.
-
-> ⚠️ **Before running cellitac, please read the full system requirements and installation instructions below.**
+A pipeline for single-cell multiome (scATAC + scRNA) data that identifies cell types from **transcription-factor motif activity**. RNA is used only to derive labels; the classifier itself is trained purely on TF activity, so the model learns chromatin-level regulatory signal.
 
 ---
 
-## System Requirements
+## Pipeline
 
-- **OS:** Linux or macOS (Windows not supported)
-- **Python:** 3.9 – 3.12 (not 3.13+)
-- **R:** 4.4.3 or higher
-- **Conda:** required for bioconda installation (Miniconda or Anaconda)
+| Stage | Steps | Tools |
+|-------|-------|-------|
+| **1. Preprocessing** (R) | multiome H5 → joint RNA+ATAC QC on shared barcodes | Seurat, Signac |
+| | SingleR labels from the Monaco immune reference | SingleR, celldex |
+| | JASPAR motif scan → chromVAR per-cell TF activity | JASPAR2020, motifmatchr, chromVAR |
+| **2. Machine learning** (Python) | class composition, unsupervised feature cleaning | pandas, scikit-learn |
+| | Logistic Regression, Random Forest, SVM, XGBoost | scikit-learn, xgboost, imbalanced-learn |
+| | TF ↔ cell-type association (Mann-Whitney + BH-FDR + effect size) | scipy |
+| | figures, tables and a JSON report | matplotlib, seaborn, networkx |
+
+**Scope.** cellitac has been developed and tested on human **PBMC** multiome data, using the Monaco immune reference for SingleR labels. It works on any human tissue whose cell types are covered by that reference (blood, bone marrow, immune infiltrates).
+
+**Genome builds:** hg38 (default) and hg19.
+
+---
+
+## Requirements
+
+- Linux or macOS (Windows via WSL)
+- Python 3.9 – 3.12
+- Conda / Miniconda
+- R ≥ 4.3 with the Bioconductor packages listed below (for the preprocessing stage). The ML stage runs on Python alone.
 
 ---
 
 ## Installation
 
-### Option 1: bioconda (recommended — installs Python + R dependencies automatically)
+Take the R packages from conda as pre-built binaries — do not let `BiocManager` compile them from source.
 
 ```bash
-conda install -c bioconda -c conda-forge cellitac
-```
+conda create -n cellitac -c conda-forge -c bioconda -y \
+  python=3.11 rpy2 r-base=4.4 \
+  r-seurat r-signac r-data.table \
+  bioconductor-jaspar2020 bioconductor-tfbstools \
+  bioconductor-motifmatchr bioconductor-chromvar \
+  bioconductor-singler bioconductor-celldex \
+  bioconductor-biovizbase bioconductor-rtracklayer \
+  bioconductor-summarizedexperiment bioconductor-biocparallel \
+  bioconductor-bsgenome.hsapiens.ucsc.hg38 \
+  bioconductor-ensdb.hsapiens.v86
 
-### Option 2: PyPI (Python only — R packages must be installed manually)
-
-```bash
+conda activate cellitac
 pip install cellitac
-```
-
-If using PyPI, install R packages manually in R:
-
-```r
-install.packages("Seurat")
-install.packages("Signac")
-install.packages("hdf5r")
-install.packages("BiocManager")
-BiocManager::install("SingleR")
-BiocManager::install("celldex")
-BiocManager::install("EnsDb.Hsapiens.v75")
-```
-
----
-
-## Python Dependencies
-
-| Package | Version |
-|---------|---------|
-| Python | 3.11.13 |
-| numpy | 2.4.2 |
-| pandas | 2.3.3 |
-| scikit-learn | 1.8.0 |
-| xgboost | 3.2.0 |
-| imbalanced-learn | 0.14.1 |
-| matplotlib | 3.9.1 |
-| seaborn | 0.13.2 |
-| plotly | 6.5.2 |
-| networkx | 3.6.1 |
-| openpyxl | 3.1.5 |
-| rpy2 | 3.5.11 |
-
-For manual installation:
-
-```bash
-pip install -r Python_requirements.txt
-```
-
-Or install individually:
-
-```bash
-pip install pandas==2.3.3 numpy==2.4.2 scikit-learn==1.8.0 xgboost==3.2.0 \
-    imbalanced-learn==0.14.1 matplotlib==3.9.1 seaborn==0.13.2 plotly==6.5.2 \
-    networkx==3.6.1 openpyxl==3.1.5 rpy2==3.5.11
-```
-
----
-
-## R Dependencies
-
-| Package | Source |
-|---------|--------|
-| R | 4.4.3 |
-| Seurat | CRAN |
-| Signac | CRAN |
-| SingleR | Bioconductor |
-| celldex | Bioconductor |
-| EnsDb.Hsapiens.v75 | Bioconductor |
-| hdf5r | CRAN |
-| Matrix | CRAN |
-
-For automated R installation, run `install_R_packages.R` in R or RStudio:
-
-```r
-source("install_R_packages.R")
-```
-
----
-
-## Quick Start
-
-```bash
-cellitac --help
-cellitac-preprocess --help
-cellitac-model --help
-```
-
----
