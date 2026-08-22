@@ -1,8 +1,0 @@
-"metric","value"
-"total_cells",1463
-"total_features",7000
-"rna_features",2000
-"atac_features",5000
-"train_cells",1022
-"test_cells",441
-"cell_types",6
