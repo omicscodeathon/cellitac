@@ -87,19 +87,18 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
   
 ---
 
-# cellitac: Model Performance Comparison Across Analytical Frameworks
+# cellitac Performance and Results
+
 
 <p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/blob/main/output/output_Second_Framework_after_dropping/Plots/table02_model_performance.png" alt="cellitac" width="700" />
-</p>  
-<p align="center">
+    <img src="cellitac_output/table02_model_performance.png" alt="Model Performance Table" width="700" />
+</p>
 
- 
-<p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/blob/main/output/output_Second_Framework_after_dropping/Plots/fig07_TF_network_SVM.png" alt="cellitac" width="700" />
-</p>  
-<p align="center">
+<br>
 
+<p align="center">
+    <img src="cellitac_output/fig07_TF_network_SVM.png" alt="TF Network SVM" width="700" />
+</p>
 
 ---
 
@@ -112,7 +111,7 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 
 <br>
 
-### 5. Reproducibility --> need fix
+### 5. Reproducibility
 
 #### Packagies & dependencies :
 [all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/cellitac/blob/main/scripts/READme.md)  
