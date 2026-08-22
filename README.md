@@ -4,7 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [![PyPI version](https://badge.fury.io/py/cellitac.svg)](https://pypi.org/project/cellitac/)
-[![Conda Bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg)](https://anaconda.org/channels/bioconda/packages/cellitac/overview)
 
 <p align="center">
   <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/logo.png" alt="cellitac logo" width="300"  />
