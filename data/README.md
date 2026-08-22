@@ -1,33 +1,34 @@
-##  Dataset:
+## Dataset
 
-**Primary Dataset**: 10X Genomics PBMC Multiome (scATAC-seq + scRNA-seq)
+cellitac was developed and tested on the **10x Genomics PBMC Multiome
+(unsorted, 10k)** reference dataset — a paired scATAC-seq + scRNA-seq assay
+on cryopreserved peripheral blood mononuclear cells from a healthy human
+donor, generated with the Chromium Next GEM Single Cell Multiome ATAC + Gene
+Expression kit and sequenced on an Illumina NovaSeq 6000.
 
-- **Source**: Healthy donor PBMCs (female, age 25)
-- **Cells**: ~12,016 estimated cells  
-- **RNA**: 1,720 median genes/cell, 3,302 median UMIs/cell
-- **ATAC**: 63,751 peaks, 9,254 median fragments/cell
-- **Size**: ~144 GB
-- **License**: Creative Commons Attribution 4.0
+- **Source:** 10x Genomics (donor material from AllCells)
+- **Alignment:** GRCh38 (hg38)
+- **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+- **10x Genomics dataset page:**
+  <https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-2-0-0>
 
-**Data Files Required**:
+### Files required by the pipeline
+
+cellitac detects files by extension, so **file names do not matter**. From
+the 10x page above, download the three files with these extensions into one
+folder:
+
+| File | Extension |
+|---|---|
+| Filtered feature-barcode matrix | `.h5` |
+| ATAC fragments | `.tsv.gz` |
+| Fragments tabix index | `.tsv.gz.tbi` |
+
+Then run:
+
+```bash
+cellitac --input /path/to/downloaded/files --output /path/to/results
 ```
-pbmc_unsorted_10k_filtered_feature_bc_matrix.h5
-pbmc_unsorted_10k_per_barcode_metrics.csv  
-pbmc_unsorted_10k_atac_fragments.tsv.gz
-pbmc_unsorted_10k_atac_peaks.bed
-```
 
-###  Data Download
-Please navigate to the [accessions](../accessions/) directory to find the download instructions file.
-or follow the link provided below
-
-Download the 10X Multiome dataset:
-```
-https://www.10xgenomics.com/datasets/pbmc-from-a-healthy-donor-no-cell-sorting-10-k-1-standard-1-0-0
-# ... (download the required files)
-```
-Also here, you will find additional dataset (`Study2`)  
-that can be used for testing or further analysis.
-
----
-
+Additional datasets used for further testing are documented in the
+[`accessions/`](../accessions/) directory.
