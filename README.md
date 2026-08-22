@@ -102,7 +102,7 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 taaaaaaaaaaaable accuracy of cellitac
 
 <p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/blob/main/output/output_Second_Framework_after_dropping/Plots/tf_celltype_network.png" alt="cellitac" width="700" />
+    <img src="https://github.com/omicscodeathon/cellitac/blob/main/output/output_Second_Framework_after_dropping/Plots/fig07_TF_network_SVM.png" alt="cellitac" width="700" />
 </p>  
 <p align="center">
 
