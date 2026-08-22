@@ -111,7 +111,7 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 
 <br>
 
-### 5. Reproducibility --> need fix
+### 5. Reproducibility
 
 #### Packagies & dependencies :
 [all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/cellitac/blob/main/scripts/READme.md)  
