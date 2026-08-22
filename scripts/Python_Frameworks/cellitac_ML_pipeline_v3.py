@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+"""
+TF-centric cell type classifier (v3).
+
+Needs cellitac_output/ populated first -- see
+scripts/R_preprocessing_step/readme.md. Expects
+cellitac_TF_activity.csv, cell_labels.csv, motif_to_TF_map.csv.
+
+python cellitac_ML_pipeline_v3.py --data-dir cellitac_output --out-dir <out>
+"""
 
 import argparse
 import json
