@@ -90,18 +90,16 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 # cellitac: Model Performance Comparison Across Analytical Frameworks
 
 
-
 <p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/main/cellitac_output/table02_model_performance.png" alt="cellitac" width="700" />
+    <img src="https://raw.githubusercontent.com/omicscodeathon/cellitac/main/cellitac_output/table02_model_performance.png" alt="cellitac" width="700" />
 </p>  
 <p align="center">
 
  
 <p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/main/cellitac_output/fig07_TF_network_SVM.png" alt="cellitac" width="700" />
+    <img src="https://raw.githubusercontent.com/omicscodeathon/cellitac/main/cellitac_output/fig07_TF_network_SVM.png" alt="cellitac" width="700" />
 </p>  
 <p align="center">
-
 
 ---
 
