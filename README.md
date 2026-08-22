@@ -46,14 +46,12 @@ The **cellitac** pipeline is designed for easy and direct use through official p
 
 ## Installation
 
-### You can install `cellitac` directly from PyPI:
+You can install `cellitac` directly from PyPI:
 
 ```bash
 pip install cellitac
-#### Using conda (Bioconda)
-```bash
-conda install -c bioconda cellitac
-```
+---
+
 
 
 ### 3. Overview of the mechanisms influencing chromatin accessibility
