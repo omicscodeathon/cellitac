@@ -92,13 +92,13 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 
 
 <p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/cellitac_output/table02_model_performance.png" alt="cellitac" width="700" />
+    <img src="https://github.com/omicscodeathon/cellitac/main/cellitac_output/table02_model_performance.png" alt="cellitac" width="700" />
 </p>  
 <p align="center">
 
  
 <p align="center">
-    <img src="https://github.com/omicscodeathon/cellitac/cellitac_output/fig07_TF_network_SVM.png" alt="cellitac" width="700" />
+    <img src="https://github.com/omicscodeathon/cellitac/main/cellitac_output/fig07_TF_network_SVM.png" alt="cellitac" width="700" />
 </p>  
 <p align="center">
 
