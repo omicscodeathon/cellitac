@@ -42,20 +42,15 @@ The **cellitac** pipeline is designed for easy and direct use through official p
 
 ### Official Packages
 * **PyPI (Python):** [cellitac on PyPI](https://pypi.org/project/cellitac)
-* **BioConda:** [cellitac on Bioconda](https://anaconda.org/channels/bioconda/packages/cellitac/overview)
 
 ---
 
-### Setup Instructions
+## Installation
 
-##  Watch this demo for better installation steps
-[![Google Drive](https://img.shields.io/badge/Watch_Video_on-Google_Drive-blue?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/11lzONeuyIwRPBx8pdx2ad_kzxnHyVd1F/view?usp=drivesdk)
+### You can install `cellitac` directly from PyPI:
 
-#### Using pip (Python)
-To install the latest stable version of **cellitac** via pip:
 ```bash
 pip install cellitac
-```
 #### Using conda (Bioconda)
 ```bash
 conda install -c bioconda cellitac
@@ -84,15 +79,7 @@ conda install -c bioconda cellitac
 
 ---
 
-## Pipeline Architecture
-```mermaid
-graph LR
-    A[Raw 10X Data] --> B[Quality Control]
-    B --> C[Feature Engineering & integration]
-    C --> D[ML Building]
-    D --> E[Evalutaion Metrics]
-    E --> F[Validation & interpretation]
-```
+
 ## 
 
 ### 5. Code Avilability:
@@ -125,53 +112,25 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 
 # cellitac: Model Performance Comparison Across Analytical Frameworks
 
-This table summarizes the performance of the top-performing machine learning models across the three implemented analytical frameworks used in the **cellitac** study.
-
-| Framework | Best Model(s) | Accuracy (%) | Key Strengths |
-|-----------|--------------|--------------|---------------|
-| **cellitac** *(4 cell types, balanced)* | **XGBoost** | **98.28** | • Highest overall accuracy <br> • Excellent feature discrimination <br> • Strong biological marker identification |
-| **CF_scATAC-tf5** *(4 cell types, rare-cells filtration)* | **Logistic Regression** | **97.49** | • Robust to natural class imbalance <br> • Fast training <br> • "Good Fit" status |
-| **scATAC-tf5** *(6 cell types, six cell-types)* | **Neural Network** <br> **Logistic Regression** | **96.80** <br> **96.60** | • Successfully classifies rare populations <br> • Maintains "Good Fit" despite extreme imbalance |
-
+taaaaaaaaaaaable accuracy of cellitac
 
 <p align="center">
     <img src="https://github.com/omicscodeathon/cellitac/blob/main/output/output_Second_Framework_after_dropping/Plots/tf_celltype_network.png" alt="cellitac" width="700" />
 </p>  
 <p align="center">
 
-----
-
- 
-## Key Takeaways
-
-* **XGBoost** provides the highest classification accuracy when dealing with balanced data (Framework 1).
-* **Logistic Regression** demonstrates superior robustness and generalization ("Good Fit") when the focus is on natural, unfiltered class distributions (Framework 2 & 3).
-* The models maintained high performance, successfully classifying up to **6 cell types**, even those with rare samples (Framework 3).
-
-----
-
-###  Computational Framework  
-
-| Language | Key Packages |
-|----------|--------------|
-| **Python** | PyTorch, scikit-learn, pandas |
-| **R**      | Seurat, Signac |
-
 ---
 
-###  Computational Resources  
 
-| Step | Recommended Resources |
-|------|------------------------|
-| **Pre-processing** |I-MAC: 3.6 GHz 10-Core Intel Core i9, 64 GB RAM, 10 GB storage |
-| **Modeling & Scripts**     | NVIDIA A100-SXM4-80GB GPU (CUDA 12.2, Driver 535.247.01) |
+### Computational Resources
 
-
-----
+| Pipeline Stage | Hardware Specification |
+|----------------|------------------------|
+| **Full Pipeline (Preprocessing & ML)** | Tested and run locally on a personal laptop: Intel(R) Core(TM) 7 240H (16 Cores), 16 GB RAM, 1 TB SSD (WSL / Linux) |
 
 <br>
 
-### 6. Reproducibility
+### 6. Reproducibility --> need fix
 
 #### Packagies & dependencies :
 [all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/cellitac/blob/main/scripts/READme.md)  
@@ -180,7 +139,6 @@ This table summarizes the performance of the top-performing machine learning mod
 
 ### 7. License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 
 
 ## Reporting Issues
