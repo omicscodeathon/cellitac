@@ -118,7 +118,7 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 
 | Pipeline Stage | Hardware Specification |
 |----------------|------------------------|
-| **Full Pipeline (Preprocessing & ML)** | Tested and run locally on a personal laptop: Intel(R) Core(TM) 7 240H (16 Cores), 16 GB RAM, 1 TB SSD (WSL / Linux) |
+| **Full Pipeline (Preprocessing & ML)** | Personal Laptop: Intel Core 7 240H (16 Cores), 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 5060 (8 GB VRAM) (WSL / Linux) |
 
 <br>
 
