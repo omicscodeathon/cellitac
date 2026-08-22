@@ -77,7 +77,7 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 **Cell types retained** :
 * B cells
 * CD4+ T cells
-* CD8+ T cells
+* CD8+ T cells  
 * Dendritic cells
 * Monocytes
 * NK cells
