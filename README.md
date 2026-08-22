@@ -12,12 +12,11 @@
 ## Table of Contents
 1. [Background](#1-background)
 2. [Installation](#2-installation)
-3. [Overview of the mechanisms influencing chromatin accessibility](#2-overview-of-the-mechanisms-influencing-chromatin-accessibility)
-4. [Workflow](#3-workflow)
-5. [Code Availability](#4-code-avilability)
-6. [Reproducibility](#5-reproducibility)
-7. [License](#6-license)
-8. [Contributors](#7-Contributors)
+3. [Workflow](#3-workflow)
+4. [Code Availability](#4-code-avilability)
+5. [Reproducibility](#5-reproducibility)
+6. [License](#6-license)
+7. [Contributors](#7-Contributors)
 
 ----
 <br>
@@ -44,16 +43,7 @@ The **cellitac** pipeline is designed for easy and direct use through official p
 
 ---
 
-### 3. Overview of the mechanisms influencing chromatin accessibility
-
-<p align="center">
-    <!-- <a href="https://drive.google.com/file/d/1cNr8JfhEcBRmOS6qTKhtnSOILNbmVBVk/view?usp=sharing"> -->
-    <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/ASBCB-front_image.png" alt="cellitac" width="700" />
-</p>
-
-
-
-### 4. Workflow  
+### 3. Workflow  
 
 <p align="center">
     <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/cellitac_fixed_methodology.drawio.png" alt="cellitac" width="700" />
@@ -69,7 +59,7 @@ The **cellitac** pipeline is designed for easy and direct use through official p
 
 ## 
 
-### 5. Code Avilability:
+### 4. Code Avilability:
 
 All scripts for the **cellitac** project (Python & R) are available in the repository:
 
@@ -122,14 +112,14 @@ All scripts for the **cellitac** project (Python & R) are available in the repos
 
 <br>
 
-### 6. Reproducibility --> need fix
+### 5. Reproducibility --> need fix
 
 #### Packagies & dependencies :
 [all package versions (R - Python) specified for this project](https://github.com/omicscodeathon/cellitac/blob/main/scripts/READme.md)  
 
 ----
 
-### 7. License
+### 6. License
 **License :** [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -140,7 +130,7 @@ To report an issue please use the issues page (https://github.com/omicscodeathon
 ## Contribute to Project
 You can offer to help with the further development of this project by making pull requests on this repo. To do so, fork this repository and make the proposed changes. Once completed and tested, submit a pull request to this repo.
 
-### 8. Contributors  
+### 7. Contributors  
 
 |   Name   | Affiliation | Role |
 |----------|-------------|------|
