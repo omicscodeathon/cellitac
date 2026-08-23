@@ -3,7 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![PyPI version](https://badge.fury.io/py/cellitac.svg)](https://pypi.org/project/cellitac/)
+[![PyPI version](https://badge.fury.io/py/cellitac.svg)](https://pypi.org/project/cellitac/2.0.0/)
 
 <p align="center">
   <img src="https://github.com/omicscodeathon/cellitac/blob/main/figures/logo.png" alt="cellitac logo" width="300"  />
