@@ -1,15 +1,10 @@
-#!/usr/bin/env python3
 """
-TF-centric cell type classifier (v3).
+cellitac.mainModel
+==================
+TF-centric, leakage-safe ML stage (v3).
 
-Needs cellitac_output/ populated first -- see
-scripts/R_preprocessing_step/readme.md. Expects
-cellitac_TF_activity.csv, cell_labels.csv, motif_to_TF_map.csv.
-
-python cellitac_ML_pipeline_v3.py --data-dir cellitac_output --out-dir <out>
 """
 
-import argparse
 import json
 import warnings
 from pathlib import Path
@@ -34,13 +29,15 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
-from sklearn.utils.class_weight import compute_class_weight
+from sklearn.utils.class_weight import compute_class_weight, compute_sample_weight
 from sklearn.metrics import (classification_report, confusion_matrix,
                              accuracy_score, precision_score, recall_score,
                              f1_score, balanced_accuracy_score, roc_auc_score)
 
 from imblearn.pipeline import Pipeline as ImbPipeline
 from imblearn.over_sampling import SMOTE
+
+from cellitac import config as cfg
 
 warnings.filterwarnings("ignore")
 sns.set_theme(style="whitegrid")
@@ -81,10 +78,42 @@ PALETTE = "tab10"
 
 
 # =============================================================================
+# XGBoost does not expose a `class_weight` parameter the way LogisticRegression,
+# RandomForest and SVC do. To give it the SAME inverse-frequency correction as
+# the other three models, we subclass XGBClassifier and compute a per-sample
+# weight inside fit(). Because the weight is derived from whatever labels reach
+# fit() at call time, it stays correct automatically under cross_val_predict,
+# learning_curve and StratifiedKFold — each fold's weights are recomputed on
+# that fold's own training rows, so there is no leakage and no mismatch. When
+# SMOTE is active the classes are already balanced by resampling, so no weights
+# are applied (mirroring class_weight=None for the other models in that mode).
+class BalancedXGBClassifier(XGBClassifier):
+    """XGBClassifier with built-in inverse-frequency sample weighting.
+
+    Equivalent, for XGBoost, to class_weight="balanced" on the other estimators.
+    """
+
+    def __init__(self, use_balanced=True, **kwargs):
+        self.use_balanced = use_balanced
+        super().__init__(**kwargs)
+
+    def fit(self, X, y, sample_weight=None, **kwargs):
+        if self.use_balanced and sample_weight is None:
+            sample_weight = compute_sample_weight("balanced", y)
+        return super().fit(X, y, sample_weight=sample_weight, **kwargs)
+
+    def get_params(self, deep=True):
+        # keep use_balanced visible to clone()/get_params so CV re-fits preserve it
+        params = super().get_params(deep=deep)
+        params["use_balanced"] = self.use_balanced
+        return params
+
+
+# =============================================================================
 class CellitacPipeline:
 
-    def __init__(self, data_dir="cellitac_output", 
-                 out_dir="output/output_Second_Framework_after_dropping"):
+    def __init__(self, data_dir=cfg.DEFAULT_PREPROCESSING_DIR,
+                 out_dir=cfg.DEFAULT_ML_DIR):
         self.data_dir = Path(data_dir)
         self.out_dir = Path(out_dir)
         self.out_dir.mkdir(parents=True, exist_ok=True)
@@ -394,7 +423,12 @@ class CellitacPipeline:
                 n_estimators=300, max_depth=6, min_samples_leaf=15,
                 max_features="sqrt", class_weight=cw,
                 random_state=RANDOM_STATE, n_jobs=-1),
-            "XGBoost": XGBClassifier(
+            # XGBoost gets the same inverse-frequency correction as the others,
+            # applied via sample_weight inside BalancedXGBClassifier.fit().
+            # use_balanced follows the same switch as class_weight above:
+            # off when SMOTE is doing the balancing, on otherwise.
+            "XGBoost": BalancedXGBClassifier(
+                use_balanced=(not USE_SMOTE),
                 n_estimators=300, max_depth=3, learning_rate=0.05, subsample=0.8,
                 colsample_bytree=0.8, reg_alpha=1.0, reg_lambda=5.0,
                 random_state=RANDOM_STATE, eval_metric="mlogloss", verbosity=0),
@@ -956,7 +990,10 @@ class CellitacPipeline:
                          classes=self.class_names,
                          class_counts={k: int(v) for k, v in
                                        self.counts_after.items()}),
-            balancing="SMOTE(in-fold)" if USE_SMOTE else "class_weight=balanced",
+            balancing=("SMOTE(in-fold)" if USE_SMOTE else
+                       "inverse-frequency weighting "
+                       "(class_weight=balanced for LogReg/RF/SVM; "
+                       "sample_weight=balanced for XGBoost)"),
             feature_selection=dict(max_features=MAX_FEATURES,
                                    fitted="inside each training fold"),
             performance=self.metrics_df.round(4).to_dict("records"),
@@ -1004,30 +1041,3 @@ class CellitacPipeline:
               self.out_dir.resolve())
         print("=" * 78)
         return True
-def main():
-    ap = argparse.ArgumentParser(description="cellitac TF-centric ML pipeline v3")
-    
-    # هنا عدلنا الـ default لكل واحد فيهم للمسارات الجديدة
-    ap.add_argument(
-        "--data-dir", 
-        default="cellitac_output", 
-        help="folder with the R outputs"
-    )
-    ap.add_argument(
-        "--out-dir", 
-        default="output/output_Second_Framework_after_dropping", 
-        help="output folder"
-    )
-    
-    args = ap.parse_args()
-    pipe = CellitacPipeline(data_dir=args.data_dir, out_dir=args.out_dir)
-    
-    if pipe.run():
-        print("\nHeadline results:")
-        print(pipe.metrics_df.round(4).to_string(index=False))
-        print()
-        print(pipe.cv_results[["Model", "Test_Accuracy_pct",
-                               "Overfitting_Score", "Verdict"]].to_string(index=False))
-
-if __name__ == "__main__":
-    main()
