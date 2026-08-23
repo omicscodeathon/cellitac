@@ -18,17 +18,35 @@ cellitac detects files by extension, so **file names do not matter**. From
 the 10x page above, download the three files with these extensions into one
 folder:
 
-| File | Extension |
-|---|---|
-| Filtered feature-barcode matrix | `.h5` |
-| ATAC fragments | `.tsv.gz` |
-| Fragments tabix index | `.tsv.gz.tbi` |
+### Required Files
 
-Then run:
+| File | Extension |
+| --- | --- |
+| [Filtered feature-barcode matrix](https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_10k/pbmc_unsorted_10k_filtered_feature_bc_matrix.h5) | `.h5` |
+| [ATAC fragments](https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_10k/pbmc_unsorted_10k_atac_fragments.tsv.gz) | `.tsv.gz` |
+| [Fragments tabix index](https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_10k/pbmc_unsorted_10k_atac_fragments.tsv.gz.tbi) | `.tsv.gz.tbi` |
+
+### Download via CLI
+
+Alternatively, you can download these files directly from the command line:
+
+```bash
+wget https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_10k/pbmc_unsorted_10k_filtered_feature_bc_matrix.h5
+wget https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_10k/pbmc_unsorted_10k_atac_fragments.tsv.gz
+wget https://cf.10xgenomics.com/samples/cell-arc/2.0.0/pbmc_unsorted_10k/pbmc_unsorted_10k_atac_fragments.tsv.gz.tbi
+
+```
+
+### Usage
+
+Once the files are downloaded, run the following command to process them:
 
 ```bash
 cellitac --input /path/to/downloaded/files --output /path/to/results
+
 ```
+
+
 
 Additional datasets used for further testing are documented in the
 [`accessions/`](../accessions/) directory.
