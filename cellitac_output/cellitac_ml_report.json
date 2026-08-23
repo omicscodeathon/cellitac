@@ -1,0 +1,126 @@
+{
+  "dataset": {
+    "cells_after_QC": 11006,
+    "cells_modelled": 10990,
+    "tf_motifs_input": 578,
+    "classes": [
+      "B cells",
+      "CD4+ T cells",
+      "CD8+ T cells",
+      "Dendritic cells",
+      "Monocytes",
+      "NK cells",
+      "T cells"
+    ],
+    "class_counts": {
+      "Monocytes": 4361,
+      "CD4+ T cells": 2272,
+      "T cells": 1169,
+      "CD8+ T cells": 1123,
+      "B cells": 1022,
+      "NK cells": 599,
+      "Dendritic cells": 444
+    }
+  },
+  "balancing": "inverse-frequency weighting (class_weight=balanced for LogReg/RF/SVM; sample_weight=balanced for XGBoost)",
+  "feature_selection": {
+    "max_features": 150,
+    "fitted": "inside each training fold"
+  },
+  "performance": [
+    {
+      "Model": "LogReg",
+      "Balanced_Acc": 0.7026,
+      "Macro_F1": 0.6705,
+      "Accuracy": 0.7398,
+      "Weighted_F1": 0.7486,
+      "Precision": 0.7704,
+      "Recall": 0.7398,
+      "AUC": 0.9572
+    },
+    {
+      "Model": "Random Forest",
+      "Balanced_Acc": 0.6782,
+      "Macro_F1": 0.6419,
+      "Accuracy": 0.7138,
+      "Weighted_F1": 0.7186,
+      "Precision": 0.7448,
+      "Recall": 0.7138,
+      "AUC": 0.9473
+    },
+    {
+      "Model": "XGBoost",
+      "Balanced_Acc": 0.7084,
+      "Macro_F1": 0.6933,
+      "Accuracy": 0.7611,
+      "Weighted_F1": 0.7661,
+      "Precision": 0.777,
+      "Recall": 0.7611,
+      "AUC": 0.9565
+    },
+    {
+      "Model": "SVM",
+      "Balanced_Acc": 0.7206,
+      "Macro_F1": 0.6958,
+      "Accuracy": 0.7616,
+      "Weighted_F1": 0.7681,
+      "Precision": 0.782,
+      "Recall": 0.7616,
+      "AUC": 0.9611
+    }
+  ],
+  "cross_validation": [
+    {
+      "Model": "LogReg",
+      "Test_Accuracy_pct": 73.98,
+      "Train_BalAcc": 0.7754,
+      "CV_BalAcc": 0.71,
+      "Overfitting_Score": 0.0654,
+      "Verdict": "Mild"
+    },
+    {
+      "Model": "Random Forest",
+      "Test_Accuracy_pct": 71.38,
+      "Train_BalAcc": 0.7425,
+      "CV_BalAcc": 0.687,
+      "Overfitting_Score": 0.0555,
+      "Verdict": "Mild"
+    },
+    {
+      "Model": "XGBoost",
+      "Test_Accuracy_pct": 76.11,
+      "Train_BalAcc": 0.8927,
+      "CV_BalAcc": 0.7101,
+      "Overfitting_Score": 0.1825,
+      "Verdict": "Moderate"
+    },
+    {
+      "Model": "SVM",
+      "Test_Accuracy_pct": 76.16,
+      "Train_BalAcc": 0.8308,
+      "CV_BalAcc": 0.7271,
+      "Overfitting_Score": 0.1037,
+      "Verdict": "Moderate"
+    }
+  ],
+  "tf_association_criterion": {
+    "test": "Mann-Whitney U, one-vs-rest",
+    "correction": "Benjamini-Hochberg",
+    "fdr_alpha": 0.05,
+    "min_cohens_d": 0.5,
+    "min_rank_biserial_auc": 0.6,
+    "n_tests": 4046,
+    "n_significant": 477
+  },
+  "importance_method": {
+    "LogReg": "mean |coefficient| across classes",
+    "Random Forest": "native gain / impurity importance",
+    "XGBoost": "native gain / impurity importance",
+    "SVM": "permutation importance (drop in balanced accuracy)"
+  },
+  "best_model": {
+    "name": "SVM",
+    "macro_f1": 0.6958042698054908,
+    "balanced_acc": 0.7206061379783926
+  }
+}

@@ -1,0 +1,5 @@
+Model,Test_Accuracy_pct,Overfitting_Score,Verdict
+LogReg,73.98,0.06542470053353244,Mild
+Random Forest,71.38,0.05553668880784135,Mild
+XGBoost,76.11,0.18253737387464686,Moderate
+SVM,76.16,0.10372644260442132,Moderate
